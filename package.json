@@ -1,0 +1,21 @@
+{
+  "name": "kgs-benefits-link-extractor",
+  "version": "1.0.0",
+  "description": "Extracts all links and embeds from HTML files and groups them by domain.",
+  "main": "extract_links_by_domain.js",
+  "scripts": {
+    "extract-links": "node extract_links_by_domain.js",
+    "download-resources": "node download_resources.js",
+    "download-fliphtml5": "node download_fliphtml5.js"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.3.0",
+    "glob": "^10.3.10",
+    "mkdirp": "^3.0.1",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^22.2.0",
+    "sharp": "^0.34.2"
+  }
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US"><head><script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/jslibrary/1746627307256/sfdc/IframeThirdPartyContextLogging.js" type="text/javascript"></script><script src="https://preparebenefits.my.site.com/lightning/lightning.out.js?v=2" type="text/javascript"></script><link class="user" href="/slds/css/pCoEurTwYAMot3IwxZS8iQ/min/scoped/one:oneNamespace,force:sldsTokens,force:base,force:formFactorLarge/slds.css" rel="stylesheet" type="text/css" /><script src="/jslibrary/1647410351256/sfdc/NetworkTracking.js" type="text/javascript"></script><script>try{ NetworkTracking.init('/_ui/networks/tracking/NetworkTrackingServlet', 'network', '0663h000005xxNl'); }catch(x){}try{ NetworkTracking.logPageView();}catch(x){}</script><script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script></head><body class="slds-scope"><span id="j_id0:j_id1"></span><html lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <head>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+        <style type="text/css">
+            #auraErrorMessage {
+                display: none;
+            }
+            c-process-portal-page > .iframe-wrapper {
+                margin: 0 !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="slds-spinner_container slds-is-fixed" id="lightning-component-spinner">
+            <div class="slds-spinner slds-spinner_medium" role="status">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+        <div id="onlineSchedulerPortalApp"></div>
+        <div id="toastContainer"></div>
+
+        <script>
+            var isClassicTheme = true
+            var toastContainer;
+
+            function removeSpinner() {
+                document.getElementById('lightning-component-spinner').classList.add('slds-hide');
+            }
+
+            $Lightning.use("sumoapp:lightningOutCommunityApp", function() {
+                $Lightning.createComponent("sumoapp:onlineSchedulerPortalPage", {}, "onlineSchedulerPortalApp", removeSpinner);
+
+                $Lightning.createComponent("sumoapp:classicToast", {}, "toastContainer", function(component) {
+                    toastContainer = component;
+                });
+            }, window.location.href.split('/apex').shift());
+
+            document.getElementById("onlineSchedulerPortalApp").addEventListener("lightning__showtoast", function(e) {
+                if (isClassicTheme) {
+                    toastContainer.showToast(e.toastAttributes);
+                } else {
+                    sforce.one.showToast(e.toastAttributes);
+                }
+            });
+        </script>
+    </body>
+
+    </html></body></html>

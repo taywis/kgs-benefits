@@ -1,0 +1,2824 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://kodiak-gas-services.benefitsinfo.com/',
+        AccountUUID: '301b401a11634dfaabe4859de00d36fc',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: 'f138101c',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Thu Jun 12 15:59:36 UTC 2025',
+        ExternalUid: null,
+        IsSiteMultilingual: true,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'health-savings-account',
+        InitialPageUuid: 'eddec5dd521d4d7b86f1a582e74489d2',
+        InitialPageId: '37062716',
+        InitialEncodedPageAlias: 'aGVhbHRoLXNhdmluZ3MtYWNjb3VudA==',
+        InitialHeaderUuid: 'ef1d32e9becd4a87ae7ac4e7f2276a3c',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: false,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'LEFT',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://kodiak-gas-services.benefitsinfo.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'en',
+        hamburgerMigration: null,
+        isFlexSite : false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 25;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="health-savings-account.html">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon"
+      href="https://irp.cdn-website.com/f138101c/dms3rep/multi/KGS_BIG.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/f138101c/site_favicon_16_1730375617614.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(21, 98, 70, 1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Anybody:ital,wght@0,100..900;1,100..900&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/5539/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/1be81a54d86cad570cf39f59eb9e882a.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="health-savings-account"] #dm [data-show-on-page-only="health-savings-account"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/f138101c/files/f138101c_header_1.min.css?v=904" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1647558846 img[dm_changed]
+{
+	object-position:50% 50% !important;
+	object-fit:cover !important;
+}
+*#dm *.dmBody div.u_1647558846 img
+{
+	object-position:50% 50% !important;
+	object-fit:cover !important;
+}
+.u_1868198294
+{
+}
+*#dm *.dmBody div.u_1267807526
+{
+	border-style:solid !important;
+	border-color:rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) !important;
+	border-width:1.25px 1.25px 1.25px 1.25px !important;
+}
+*.dmFooterContainer
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1865622640 span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1286176634 span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1212233242 span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1990617915 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody div.u_1162193273 .header-cell
+{
+	background-color:rgba(202,178,131,1) !important;
+}
+*#dm *.dmBody *.u_1754087240
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1754087240 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1218800822
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1218800822 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1240186506
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1240186506 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody a.u_1483838953 span.text
+{
+	color:rgba(255,255,255,1) !important;
+	font-family:Anybody !important;
+	font-weight:500 !important;
+}
+*#dm *.dmBody a.u_1483838953
+{
+	border-style:solid !important;
+	border-width:1.25px 1.25px 1.25px 1.25px !important;
+	border-color:rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) !important;
+	background-color:rgba(244,189,72,1) !important;
+	background-image:initial !important;
+	border-radius:9px 9px 9px 9px !important;
+}
+*#dm *.dmBody *.u_1793731090
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1793731090 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody div.u_1183672410 .header-cell
+{
+	background-color:rgba(244,189,72,1) !important;
+}
+*#dm *.dmBody *.u_1183672410 .row
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody div.u_1183672410 .table
+{
+	table-layout:fixed !important;
+}
+*#dm *.dmBody nav.u_1096742937
+{
+	color:black !important;
+}
+*#dm *.dmBody nav.u_1853900254
+{
+	color:white !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+ <style id="grid-styles-desktop-62a7224efdd2b461c3378034-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media all {
+    
+#\36 2a7224efdd2b461c3378036 {
+    align-self: start;
+    background-size: cover;
+    min-height: 356px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    padding: 50px 0% 50px 0%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a7224efdd2b461c3378039 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\36 2a7224efdd2b461c3378038::before, #\36 2a7224efdd2b461c3378038 > .bgExtraLayerOverlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    border-radius: inherit;
+    content: '';
+    background-color: rgba(0, 0, 0, 1);
+}
+#\36 2a7224efdd2b461c3378038 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+    background-image: url(https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/pexels-photo-7301597-4a86ded8-71b7cb36-2880w.jpeg);
+}
+    
+#\36 2a7224efdd2b461c3378037 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 20px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    min-width: 4%;
+    padding: 16px 16px 16px 16px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    position: relative;
+    width: 99.99874185576274%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: auto;
+    justify-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#b2b9d237.flex-element.widget-wrapper > [data-element-type] {
+    padding: 7px 7px 7px 7px;
+}
+#b2b9d237 {
+    position: relative;
+    width: 39.71%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: auto;
+    justify-self: auto;
+    order: 1;
+    margin: 0px 0% 0px 45%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62a7224efdd2b461c3378034-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62a7224efdd2b461c3378034-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2a7224efdd2b461c3378036 {
+    min-height: 271px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px 0px 20px 0px;
+}
+    
+#\36 2a7224efdd2b461c3378037 {
+    width: 100%;
+    min-height: 8px;
+    padding: 16px 16px 16px 16px;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    width: 100.00%;
+    align-self: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+    
+#b2b9d237 {
+    width: 53.18%;
+    align-self: flex-end;
+    margin: 0px 2% 0px 0%;
+}
+    
+#\36 2a7224efdd2b461c3378039 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62a7224efdd2b461c3378034-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 1400px) {
+    
+#\36 2a7224efdd2b461c3378037 {
+    width: 100%;
+    min-height: 8px;
+    justify-content: center;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    align-self: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+    
+#\36 2a7224efdd2b461c3378036 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 423px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    
+#b2b9d237 {
+    align-self: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 55%;
+    width: 36.09%;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62a7224efdd2b461c3378034-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 766px) {
+    
+#\36 2a7224efdd2b461c3378036 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a7224efdd2b461c3378038 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62a7224efdd2b461c3378034-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 767px) {
+    
+#\36 2a7224efdd2b461c3378036 {
+    min-height: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0px 0% 8px 0%;
+}
+    
+#\36 2a7224efdd2b461c3378037 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: flex-end;
+    padding: 16px 16px 16px 16px;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    width: 106.13%;
+    align-self: auto;
+    max-width: none;
+    order: 0;
+    justify-self: auto;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#b2b9d237 {
+    width: 87.71%;
+    align-self: auto;
+    max-width: none;
+    justify-self: auto;
+    order: 1;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\36 2a7224efdd2b461c3378039 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62a7224efdd2b461c3378034-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\36 2a72291fdd2b461c3378609 {
+    align-self: flex-start;
+    width: 55.08%;
+    margin: 0px 0px 0px 0%;
+}
+    
+#b2b9d237 {
+    align-self: center;
+    width: 47.31%;
+    margin: 0px 0px 0px 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-62a72382fdd2b461c3379dd6-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media all {
+    
+#\36 2a72382fdd2b461c3379dd5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\36 2a72382fdd2b461c3379dd7 {
+    background-position: 100% 50%;
+    background-image: initial;
+    background-color: rgba(217, 216, 214, 0.5);
+}
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    min-height: 504px;
+    column-gap: 2%;
+    row-gap: 12px;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a72592fdd2b461c337af46 {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 9px;
+    width: 100%;
+    min-width: 4%;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#widget_b2e {
+    width: 100.00%;
+    height: auto;
+    max-width: 100%;
+    order: 0;
+    align-self: center;
+}
+    
+#widget_uqa {
+    width: 100.00%;
+    height: auto;
+    max-width: 100%;
+    order: 1;
+    align-self: center;
+    margin-bottom: 10px;
+}
+    
+#widget_r48.flex-element.widget-wrapper > [data-element-type] {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+#widget_r48 {
+    width: 91.23987383945627%;
+    height: auto;
+    min-height: 1px;
+    max-width: 100%;
+    order: 5;
+    align-self: center;
+    justify-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_1db {
+    width: 100.00%;
+    height: 208px;
+    max-width: 100%;
+    order: 4;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62a72382fdd2b461c3379dd6-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62a72382fdd2b461c3379dd6-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    min-height: 579px;
+}
+    
+#\36 2a72382fdd2b461c3379dd5 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#widget_uqa {
+    width: 94.84%;
+    order: 1;
+}
+    
+#widget_b2e {
+    order: 0;
+}
+    
+#widget_r48 {
+    order: 3;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62a72382fdd2b461c3379dd6-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 1400px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 508px;
+}
+    
+#\36 2a72592fdd2b461c337af46 {
+    width: 100%;
+    min-height: 8px;
+    row-gap: 9px;
+}
+    
+#widget_uqa {
+    width: 93.05%;
+    margin-bottom: 10px;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62a72382fdd2b461c3379dd6-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 766px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a72382fdd2b461c3379dd7 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62a72382fdd2b461c3379dd6-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 767px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-wrap: nowrap;
+    padding: 10px 0% 0px 0%;
+}
+    
+#\36 2a72592fdd2b461c337af46 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\36 2a72382fdd2b461c3379dd5 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62a72382fdd2b461c3379dd6-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 468px) and (max-width: 767px) {
+    
+#widget_uqa {
+    width: 97.43%;
+    order: 1;
+}
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    padding-top: 10px;
+}
+    
+#widget_1db {
+    justify-self: auto;
+    align-self: auto;
+    width: 98.83%;
+    order: 2;
+    height: 214px;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_b2e {
+    order: 0;
+}
+    
+#widget_r48 {
+    order: 3;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-af8e88dd-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media all {
+    
+#\33 c903530 {
+    align-self: start;
+    background-size: cover;
+    padding-left: 0px;
+    min-height: 59px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    padding-right: 0px;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\37 5578d9f {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 15px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#a8f7c774 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\35 fd291ba {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 100% 50%;
+    align-items: start;
+    position: relative;
+    background-image: initial;
+    background-color: rgba(217, 216, 214, 0.5);
+}
+    
+#widget_bn6 {
+    position: relative;
+    width: 99.9987793004229%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: auto;
+    justify-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-af8e88dd-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-af8e88dd-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\33 c903530 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    min-height: 75px;
+}
+    
+#a8f7c774 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-af8e88dd-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 1400px) {
+    
+#\33 c903530 {
+    padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 35px;
+}
+    
+#\37 5578d9f {
+    width: 100%;
+    min-height: 8px;
+}
+    
+#widget_bn6 {
+    justify-self: auto;
+    align-self: auto;
+    width: 100%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-af8e88dd-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 766px) {
+    
+#\33 c903530 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\35 fd291ba {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-af8e88dd-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 767px) {
+    
+#\33 c903530 {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-wrap: nowrap;
+    padding: 0px 0% 0px 0%;
+}
+    
+#\37 5578d9f {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#a8f7c774 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-af8e88dd-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\37 5578d9f {
+    height: auto;
+    min-height: 66px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-ce347b20-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media all {
+    
+#\36 2760eee {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\39 c1b0801 {
+    align-self: start;
+    background-size: cover;
+    padding-left: 0px;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    padding-right: 0px;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#fdd890a7 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 18px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 32%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 15px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\30 fc01701 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 100% 50%;
+    align-items: start;
+    position: relative;
+    background-image: initial;
+    background-color: rgba(217, 216, 214, 0.5);
+}
+    
+#group_vc1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    max-width: 100%;
+    width: 32%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 18px;
+    align-self: stretch;
+    padding-top: 15px;
+}
+    
+#group_p4c {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    max-width: 100%;
+    width: 32%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 18px;
+    align-self: stretch;
+    padding-top: 15px;
+}
+    
+#widget_lom {
+    position: relative;
+    width: 99.99549500454134%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_fjc {
+    position: relative;
+    width: 99.99503304626478%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#bd992c1f {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_a8c {
+    position: relative;
+    width: 65.51%;
+    height: 142px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: center;
+    order: 1;
+}
+    
+#widget_lst {
+    position: relative;
+    width: 72.03458673932788%;
+    height: 160px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: center;
+    order: 1;
+    justify-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_53l {
+    position: relative;
+    width: 75.26801089918256%;
+    height: 137px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    order: 1;
+    align-self: center;
+    justify-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-ce347b20-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-ce347b20-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\39 c1b0801 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    min-height: 250px;
+}
+    
+#\36 2760eee {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#widget_lst {
+    width: 70.19%;
+    height: 144px;
+}
+    
+#widget_53l {
+    width: 70.49%;
+    height: 126px;
+}
+    
+#widget_a8c {
+    width: 67.86%;
+    height: 140px;
+}
+    
+#bd992c1f {
+    width: 100.00%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-ce347b20-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 1400px) {
+    
+#\39 c1b0801 {
+    padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 250px;
+}
+    
+#fdd890a7 {
+    width: 32%;
+    min-height: 8px;
+    row-gap: 28px;
+    padding-bottom: 5px;
+}
+    
+#group_vc1 {
+    width: 32%;
+    min-height: 8px;
+    row-gap: 20px;
+}
+    
+#group_p4c {
+    width: 32%;
+    min-height: 8px;
+}
+    
+#widget_a8c.flex-element.widget-wrapper > [data-element-type] {
+    padding-bottom: 5px;
+}
+#widget_a8c {
+    width: 52.478125%;
+    height: 138px;
+    justify-self: auto;
+    align-self: center;
+    order: 1;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_lom {
+    order: 0;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-ce347b20-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 766px) {
+    
+#\39 c1b0801 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\30 fc01701 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-ce347b20-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 767px) {
+    
+#\39 c1b0801 {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 4px;
+    flex-wrap: nowrap;
+    padding: 10px 0% 10px 0%;
+}
+    
+#\36 2760eee {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#fdd890a7 {
+    width: 100%;
+    min-height: 166px;
+    align-items: center;
+    row-gap: 8px;
+    height: auto;
+    padding-top: 0px;
+}
+    
+#group_vc1 {
+    width: 100%;
+    min-height: 168px;
+    align-items: center;
+    row-gap: 5px;
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+    
+#group_p4c {
+    width: 100%;
+    min-height: 186px;
+    align-items: center;
+    row-gap: 0px;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+    
+#widget_a8c {
+    height: 102px;
+    width: 40.42%;
+    order: 1;
+}
+    
+#widget_lst {
+    height: 122px;
+    width: 59.73%;
+}
+    
+#widget_53l {
+    height: 120px;
+    width: 60.45%;
+}
+    
+#widget_lom {
+    justify-self: auto;
+    align-self: auto;
+    width: 100%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-ce347b20-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 468px) and (max-width: 767px) {
+    
+#group_p4c {
+    height: auto;
+    min-height: 184px;
+}
+    
+#\39 c1b0801 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-97ea517c-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media all {
+    
+#f64c0197 {
+    align-items: center;
+    width: 73%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    order: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: initial;
+    border-style: solid;
+    border-width: 0 0 0 0;
+    border-color: rgba(88, 92, 90, 1) rgba(88, 92, 90, 1) rgba(88, 92, 90, 1) rgba(88, 92, 90, 1);
+    padding: 16px 16px 16px 16px;
+}
+    
+#\34 3f3b8bd {
+    width: 280px;
+    height: auto;
+    min-height: 9px;
+    max-width: 100%;
+    order: 0;
+    margin-top: 30px;
+    align-self: center;
+}
+    
+#d8a9801d {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#e0011495 {
+    min-height: 160px;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: none;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 16px 16px 16px 16px;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#f60d71bd {
+    background-color: rgba(12, 86, 64, 1);
+    background-image: initial;
+}
+    
+#bfc28768 {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    justify-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#group_ml5 {
+    width: 27%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 24px;
+    padding: 16px 16px 16px 16px;
+}
+    
+#widget_q46 {
+    width: 69.7%;
+    height: 156px;
+    max-width: 100%;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-97ea517c-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-97ea517c-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#d8a9801d {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-97ea517c-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 1400px) {
+    
+#f64c0197 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+    
+#\34 3f3b8bd.flex-element.widget-wrapper > [data-element-type].flexButton.dmWidget {
+    padding-top: 16px;
+}
+#\34 3f3b8bd {
+    margin-top: 20px;
+}
+    
+#e0011495 {
+    min-height: 160px;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-97ea517c-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 766px) {
+    
+#e0011495 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#f60d71bd {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-97ea517c-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (max-width: 767px) {
+    
+#f64c0197 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#e0011495 {
+    min-height: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px 0% 10px 0%;
+}
+    
+#group_ml5 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    padding-top: 0px;
+    row-gap: 0px;
+}
+    
+#widget_q46 {
+    height: 130px;
+    justify-self: auto;
+    align-self: auto;
+    width: 55%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-97ea517c-eddec5dd521d4d7b86f1a582e74489d2" data-page-uuid="eddec5dd521d4d7b86f1a582e74489d2">@media (min-width: 468px) and (max-width: 767px) {
+    
+#d8a9801d {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#e0011495 {
+    padding-right: 0%;
+    padding-left: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-62a63883fdd2b461c331afd8-ef1d32e9becd4a87ae7ac4e7f2276a3c" data-page-uuid="ef1d32e9becd4a87ae7ac4e7f2276a3c" data-is-header="true">@media all {
+    
+#\36 2a63883fdd2b461c331afda {
+    align-self: start;
+    background-size: cover;
+    min-height: 140px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a63883fdd2b461c331afdd {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+}
+    
+#\36 2a63883fdd2b461c331afd9 {
+    margin: 0px 6% 0px 6%;
+}
+    
+#\36 2a63891fdd2b461c331b27a {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 35px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 48%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a63893fdd2b461c331b3a4 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 35px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 48%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a638b8fdd2b461c331b963 {
+    position: relative;
+    width: 230px;
+    height: 55px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: center;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\36 2a638c0fdd2b461c331ba64 {
+    position: relative;
+    width: 230px;
+    height: 55px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: flex-start;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62a63883fdd2b461c331afd8-ef1d32e9becd4a87ae7ac4e7f2276a3c" data-page-uuid="ef1d32e9becd4a87ae7ac4e7f2276a3c" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62a63883fdd2b461c331afd8-ef1d32e9becd4a87ae7ac4e7f2276a3c" data-page-uuid="ef1d32e9becd4a87ae7ac4e7f2276a3c" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2a63883fdd2b461c331afda {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 140px;
+    padding: 70px 4% 70px 4%;
+}
+    
+#\36 2a63891fdd2b461c331b27a {
+    width: 48%;
+    min-height: 8px;
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 2a63893fdd2b461c331b3a4 {
+    width: 48%;
+    min-height: 8px;
+    padding: 0px 0px 0px 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62a63883fdd2b461c331afd8-ef1d32e9becd4a87ae7ac4e7f2276a3c" data-page-uuid="ef1d32e9becd4a87ae7ac4e7f2276a3c" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62a63883fdd2b461c331afd8-ef1d32e9becd4a87ae7ac4e7f2276a3c" data-page-uuid="ef1d32e9becd4a87ae7ac4e7f2276a3c" data-is-header="true">@media (max-width: 766px) {
+    
+#\36 2a63883fdd2b461c331afda {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a63883fdd2b461c331afdd {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62a63883fdd2b461c331afd8-ef1d32e9becd4a87ae7ac4e7f2276a3c" data-page-uuid="ef1d32e9becd4a87ae7ac4e7f2276a3c" data-is-header="true">@media (max-width: 767px) {
+    
+#\36 2a63883fdd2b461c331afda {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: nowrap;
+    padding: 30px 4% 30px 4%;
+}
+    
+#\36 2a63891fdd2b461c331b27a {
+    width: 100%;
+    min-height: 80px;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    row-gap: 15px;
+}
+    
+#\36 2a63893fdd2b461c331b3a4 {
+    width: 100%;
+    min-height: 80px;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    row-gap: 15px;
+}
+    
+#\36 2a638b8fdd2b461c331b963 {
+    align-self: center;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a638c0fdd2b461c331ba64 {
+    align-self: center;
+    margin: 0px 0px 0px 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62a63883fdd2b461c331afd8-ef1d32e9becd4a87ae7ac4e7f2276a3c" data-page-uuid="ef1d32e9becd4a87ae7ac4e7f2276a3c" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+}</style> 
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-72, .size-72, .size-72 > font { font-size: 72px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-26, .size-26, .size-26 > font { font-size: 26px !important; }.font-size-50, .size-50, .size-50 > font { font-size: 50px !important; }.font-size-32, .size-32, .size-32 > font { font-size: 32px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Averia Serif Libre Fallback";
+  src: local('Arial');
+  ascent-override: 86.2985%;
+  descent-override: 21.9523%;
+  line-gap-override: 8.6865%;
+  size-adjust: 103.4292%;
+}@font-face {
+  font-family: "Anybody Fallback";
+  src: local('Arial');
+  ascent-override: 71.036%;
+  descent-override: 21.4448%;
+  size-adjust: 111.915%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<link rel="alternate" hreflang="en" href="health-savings-account.html" />
+
+<link rel="alternate" hreflang="x-default" href="health-savings-account.html" />
+
+<link rel="alternate" hreflang="es-mx" href="http://kodiak-gas-services.benefitsinfo.com/es-mx/health-savings-account" />
+
+
+
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://kodiak-gas-services.benefitsinfo.com/health-savings-account">
+
+  <title>
+    Kodiak Gas Services
+  </title>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Kodiak Gas Services"/>
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/KGS_BIG-1920w.png"/>
+  <meta property="og:title" content="Kodiak Gas Services"/>
+  <meta property="og:image" content="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/KGS_BIG-1920w.png"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="health-savings-account"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper fullSidebarLayout-var5 null fullSidebarLayout">
+         <div dmwrapped="true" id="1785920551"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopSideBarTabletHamburger" class="fullSidebarLayout dm-bfs dm-layout-sec hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 hamburger-reverse layout-drawer_fixed-header dmPageBody d-page-1125715846 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1125715846" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="5ff40d2f36ae4e5ea1bc96b2e2fcf67e===header" data-origin="top"> <div class="u_1556751554 dmRespRow" style="text-align: center;" id="1556751554"> <div class="dmRespColsWrapper" id="1247036391"> <div class="u_1873655022 dmRespCol small-12 medium-12 large-12 empty-column" id="1873655022"></div> 
+</div> 
+</div> 
+ <div class="u_1546108297 dmRespRow middleDrawerRow" style="text-align: center;" id="1546108297"> <div class="dmRespColsWrapper" id="1263747568"> <div class="dmRespCol small-12 u_1926393063 medium-12 large-12" id="1926393063"> <nav class="u_1096742937 effect-float main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_4" layout-sub="" data-show-vertical-sub-items="SHOW" id="1096742937" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="index.html" class="unifiednav__item  dmUDNavigationItem_010101472373  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="schedule-your-enrollment-call.html" class="unifiednav__item  dmUDNavigationItem_010101986174  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Schedule Your Enrollment Call" data-auto="page-text-style">Schedule Your Enrollment Call<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html" class="unifiednav__item  dmUDNavigationItem_010101325708  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Benefits Guide" data-auto="page-text-style">Benefits Guide<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Education-Center.html" class="unifiednav__item  dmUDNavigationItem_010101436714  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Education Center" data-auto="page-text-style">Education Center<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="health-savings-account.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101334827  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Health Savings Account" data-auto="page-text-style">Health Savings Account<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-directory.html" class="unifiednav__item  dmUDNavigationItem_010101318236  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Benefits Directory" data-auto="page-text-style">Benefits Directory<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-frequently-asked-questions.html" class="unifiednav__item  dmUDNavigationItem_010101937334  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Frequently Asked Questions" data-auto="page-text-style">Frequently Asked Questions<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html#MedicalPlansSummaryofBenefitsandCoverage" class="unifiednav__item  dmUDNavigationItem_010101912664  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Medical Plans  Summary of Benefits  and Coverage" data-auto="page-text-style">Medical Plans  Summary of Benefits  and Coverage<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1866713565" style="text-align: center;" id="1866713565"> <div class="dmRespColsWrapper" id="1790375733"> <div class="u_1123442441 dmRespCol small-12 medium-12 large-12 empty-column" id="1123442441"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="dmRespRow defaultMultilingualExtensionRow fullBleedChanged fullBleedMode" id="1462926677"> <div class="dmRespColsWrapper" id="1358347156"> <div class="dmRespCol defaultMultilingualExtensionColumn small-12 large-123 medium-12" id="1373063959"> <div id="1567722337" class="u_1567722337 multilingualWidget dropdown long-label" dmle_extension="multilingual" data-element-type="multilingual" data-display="dropdownLongLabel" icon="false" surround="false"> <div class="desktopMultilingual"> <div class="language current-language"> <a href="health-savings-account.html" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/us.png" alt="English" data-code="" onerror="handleImageLoadError(this)"/> <span class="name">English</span> 
+ <span class="short-label">en</span> 
+ <div class="dm-icon dm-icon-chevron-down"></div> 
+</a> 
+</div> 
+ <div class="language other-languages"> <a href="http://kodiak-gas-services.benefitsinfo.com/es-mx/health-savings-account" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/mx.png" alt="Español" onerror="handleImageLoadError(this)"/> <span class="name">Espa&ntilde;ol</span> 
+ <span class="short-label">es</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1705692124 dmRespRow" style="text-align: center;" id="1705692124"> <div class="dmRespColsWrapper" id="1469942216"> <div class="u_1613838574 dmRespCol small-12 large-3 medium-3" id="1613838574"> <div class="u_1415835595 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1415835595"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/KGS_BIG-1920w.png" alt="" id="1870839822" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/KGS_BIG.png" width="1583" height="472" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div class="u_1655486006 dmRespCol small-12 large-9 medium-9 empty-column" id="1655486006"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="hasGenericSidebar sidebarLeft"> <div id="siteSidebar" class="genericSidebar sideheader u_sideheader u_siteSidebar p_hfcontainer showOnLarge" data-global-position="true" data-no-rows-wrapper="true" data-no-full-height="true" data-has-layouts="true" data-has-small-screen="true"> <div id="sbcontainer" class="sbcontainer" layout="SHARD2e432cda0764b4255a28ec48b399dd413===header"> <div class="u_1690763676 dmRespRow" style="text-align: center;" id="1690763676"> <div class="dmRespColsWrapper" id="1406870404"> <div class="dmRespCol small-12 medium-12 large-12" id="1386444151"> <div class="u_1533289993 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1533289993"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Kodiak+logo+white-1920w.png" id="1099577100" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Kodiak+logo+white.png" width="1583" height="472" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1410382645 dmRespRow middleDrawerRow" style="text-align: center;" id="1410382645"> <div class="dmRespColsWrapper" id="1785181276"> <div class="dmRespCol small-12 medium-12 large-12" id="1430801864"> <nav class="u_1853900254 unifiednav_vertical effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_1" layout-sub="" data-show-vertical-sub-items="HOVER" id="1853900254" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="index.html" class="unifiednav__item  dmUDNavigationItem_010101472373  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="schedule-your-enrollment-call.html" class="unifiednav__item  dmUDNavigationItem_010101986174  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Schedule Your Enrollment Call" data-auto="page-text-style">Schedule Your Enrollment Call<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html" class="unifiednav__item  dmUDNavigationItem_010101325708  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Benefits Guide" data-auto="page-text-style">Benefits Guide<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Education-Center.html" class="unifiednav__item  dmUDNavigationItem_010101436714  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Education Center" data-auto="page-text-style">Education Center<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="health-savings-account.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101334827  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Health Savings Account" data-auto="page-text-style">Health Savings Account<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-directory.html" class="unifiednav__item  dmUDNavigationItem_010101318236  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Benefits Directory" data-auto="page-text-style">Benefits Directory<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-frequently-asked-questions.html" class="unifiednav__item  dmUDNavigationItem_010101937334  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Frequently Asked Questions" data-auto="page-text-style">Frequently Asked Questions<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html#MedicalPlansSummaryofBenefitsandCoverage" class="unifiednav__item  dmUDNavigationItem_010101912664  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Medical Plans  Summary of Benefits  and Coverage" data-auto="page-text-style">Medical Plans  Summary of Benefits  and Coverage<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <div id="1245790846" class="u_1245790846 default multilingualWidget dropdown long-label" dmle_extension="multilingual" data-element-type="multilingual" needs_premium_validation="true" adwords="" data-display="dropdownLongLabel" icon="true" wr="true" surround="true"> <div class="desktopMultilingual"> <div class="language current-language"> <a href="health-savings-account.html" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/us.png" alt="English" data-code="" onerror="handleImageLoadError(this)"/> <span class="name">English</span> 
+ <span class="short-label">en</span> 
+ <div class="dm-icon dm-icon-chevron-down"></div> 
+</a> 
+</div> 
+ <div class="language other-languages"> <a href="http://kodiak-gas-services.benefitsinfo.com/es-mx/health-savings-account" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/mx.png" alt="Español" onerror="handleImageLoadError(this)"/> <span class="name">Espa&ntilde;ol</span> 
+ <span class="short-label">es</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1734377663" style="text-align: center;" id="1734377663"> <div class="dmRespColsWrapper" id="1049577641"> <div class="dmRespCol small-12 medium-12 large-12" id="1727967028"> <a data-display-type="block" class="u_1363664647 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient flexButton" file="false" href="mailto:benefits@kodiakgas.com" data-element-type="dButtonLinkId" id="1363664647"> <span class="iconBg" aria-hidden="true" id="1349293991"> <span class="icon hasFontIcon icon-star" id="1521483009"></span> 
+</span> 
+ <span class="text" id="1139222143">Contact KGS Benefits Department</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="sidebarHamburger" class="u_sidebarHamburger"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+</div> 
+ <div id="siteSidebarSpacer" class="showOnLarge"></div> 
+ <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="desktopBodyBox"> <div id="iscrollBody"> <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_health-savings-account"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1125715846"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1841797601"> <div data-flex-id="62a7224efdd2b461c3378034" data-auto="flex-section" id="1910404561" class="u_1910404561" data-layout-section=""> <div class="flex-widgets-container" id="1486629252"> <div class="align-center text-align-center dmSocialHub gapSpacing" id="1391850946" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://twitter.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Twitter&apos;)"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://youtube.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <section id="62a7224efdd2b461c3378039" class="flex-element section" data-auto="flex-element-section"> <div id="62a7224efdd2b461c3378038" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62a7224efdd2b461c3378036" class="flex-element group" data-auto="flex-element-group"> <div id="62a7224efdd2b461c3378037" class="flex-element group" data-auto="flex-element-group"> <div id="62a72291fdd2b461c3378609" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkxlZnQiLCJkdXJhdGlvbiI6MSwiZGVsYXkiOjAsImludGVuc2l0eSI6MX19" data-external-id="1757122624"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1757122624" style=""> <h1 class="m-size-48 size-72"><span class="font-size-72 m-font-size-48" m-font-size-set="true" style="color:rgb(255, 255, 255);display:initial;font-family:Anybody, 'Anybody Fallback';">Health Savings Account</span></h1> 
+</div> 
+</div> 
+ <div id="b2b9d237" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkxlZnQiLCJkdXJhdGlvbiI6MSwiZGVsYXkiOjAsImludGVuc2l0eSI6MX19" data-external-id="1267807526"> <div class="dmNewParagraph u_1267807526" data-element-type="paragraph" data-version="5" id="1267807526" style=""> <h1 class="t-text-align-justify m-size-19 m-text-align-center text-align-justify size-24"><span style="color:rgb(255, 255, 255);display:initial;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-19 font-size-24">Take a few minutes to learn more about your Health Savings Account (HSA) below.</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="62a72382fdd2b461c3379dd6" data-auto="flex-section" id="1106279434" data-layout-section=""> <div class="flex-widgets-container" id="1203610011"></div> 
+ <section id="62a72382fdd2b461c3379dd5" class="flex-element section" data-auto="flex-element-section"> <div id="62a72382fdd2b461c3379dd7" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62a72382fdd2b461c3379dd8" class="flex-element group" data-auto="flex-element-group"> <div id="62a72592fdd2b461c337af46" class="flex-element group" data-auto="flex-element-group"> <div id="widget_uqa" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1234273445"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1234273445" style=""><p class="text-align-center m-text-align-center m-size-18 size-18"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-18 m-font-size-18" m-font-size-set="true">Contributions to your HSA come from two sources - you and your employer.&nbsp; All the money in your account is yours to spend on qualified health care expenses or save for future expenses.&nbsp; The table below shows the maximum amounts that can be contributed to your HSA.&nbsp; Anyone age 55 and older can contribute an additional $1,000 annually.</span></p><p class="text-align-center m-text-align-center"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-18 m-font-size-18" m-font-size-set="true"><br/></span></p><p class="text-align-center m-text-align-center m-size-18 size-18"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-18 m-font-size-18" m-font-size-set="true">Remember, you may not use HSA funds to reimburse expenses incurred prior to your HSA being opened, or expenses incurred prior to being enrolled in a High Deductible Health Plan (HDHP).</span></p><p class="text-align-center m-text-align-center"><br/></p><p class="text-align-center m-text-align-center size-18 m-size-18"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-18 m-font-size-18" m-font-size-set="true">Employees who are currently enrolled in Medicare are not eligible to contribute towards their HSA.</span></p></div> 
+</div> 
+ <div id="widget_b2e" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-hidden-on-desktop="" data-external-id="1610158332"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1610158332" style=""><p class="m-text-align-center m-size-21 text-align-center size-26"><span class="font-size-26 m-font-size-21" style="font-weight:bold;display:unset;font-family:Anybody, 'Anybody Fallback';font-style:normal;">Contributing To and Using HSA Funds</span></p></div> 
+</div> 
+ <div id="widget_1db" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="table" data-external-id="1183672410"> <div class="default u_1183672410 dmTable table-scroll" id="1183672410" dmle_extension="table" data-element-type="table" wr="true" data-table-align="center" icon="true" surround="true" adwords="" data-ext="eyJsYXlvdXQiOiJzY3JvbGwiLCJyb3dzIjpbeyIwIjp7InZhbHVlIjoiQ292ZXJhZ2UgTGV2ZWwifSwiMSI6eyJ2YWx1ZSI6IjIwMjUgVG90YWwgSVJTIENvbnRyaWJ1dGlvbiBMaW1pdHMifSwiMiI6eyJ2YWx1ZSI6IktvZGlhayAyMDI1IENvbnRyaWJ1dGlvbiJ9LCIzIjp7InZhbHVlIjoiRUUncyAyMDI1IEFubnVhbCBNYXggQ29udHJpYnV0aW9uIn0sIjQiOnsidmFsdWUiOiJIU0EgQ2F0Y2ggVXAgNTUgT2xkZXIgSVJTIENvbnRyaWJ1dGlvbiBMaW1pdHMifSwiNSI6eyJ2YWx1ZSI6IkhTQSBDYXRjaCBVcCA1NSBPbGRlciBFRSdzIE1heCBDb250cmlidXRpb24gaW4gMjAyNSJ9fSx7IjAiOnsidmFsdWUiOiJFRSBvbmx5In0sIjEiOnsidmFsdWUiOiIkNCwzMDAifSwiMiI6eyJ2YWx1ZSI6IiQxLDUwMCJ9LCIzIjp7InZhbHVlIjoiJDIsODAwIn0sIjQiOnsidmFsdWUiOiIkNSwzMDAifSwiNSI6eyJ2YWx1ZSI6IiQzLDgwMCJ9fSx7IjAiOnsidmFsdWUiOiJFRSArIFNwb3VzZSJ9LCIxIjp7InZhbHVlIjoiJDgsNTUwIn0sIjIiOnsidmFsdWUiOiIkMyw1MDAifSwiMyI6eyJ2YWx1ZSI6IiQ1LDA1MCJ9LCI0Ijp7InZhbHVlIjoiJDksNTUwIn0sIjUiOnsidmFsdWUiOiIkNiwwNTAifX0seyIwIjp7InZhbHVlIjoiRUUgKyBDaGlsZHJlbiJ9LCIxIjp7InZhbHVlIjoiJDgsNTUwIn0sIjIiOnsidmFsdWUiOiIkMyw1MDAifSwiMyI6eyJ2YWx1ZSI6IiQ1LDA1MCJ9LCI0Ijp7InZhbHVlIjoiJDksNTUwIn0sIjUiOnsidmFsdWUiOiIkNiwwNTAifX0seyIwIjp7InZhbHVlIjoiRUUgKyBGYW1pbHkifSwiMSI6eyJ2YWx1ZSI6IiQ4LDU1MCJ9LCIyIjp7InZhbHVlIjoiJDQsMDAwIn0sIjMiOnsidmFsdWUiOiIkNCw1NTAifSwiNCI6eyJ2YWx1ZSI6IiQ5LDU1MCJ9LCI1Ijp7InZhbHVlIjoiJDUsNTUwIn19LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9LHt9XX0="> <div class="table-wrapper "> <table class="table"> <tbody> <tr class="row"> <th class="header-cell">Coverage Level</th> 
+ <th class="header-cell">2025 Total IRS Contribution Limits</th> 
+ <th class="header-cell">Kodiak 2025 Contribution</th> 
+ <th class="header-cell">EE's 2025 Annual Max Contribution</th> 
+ <th class="header-cell">HSA Catch Up 55 Older IRS Contribution Limits</th> 
+ <th class="header-cell">HSA Catch Up 55 Older EE's Max Contribution in 2025</th> 
+</tr> 
+ <tr class="row"> <td class="cell">EE only</td> 
+ <td class="cell">$4,300</td> 
+ <td class="cell">$1,500</td> 
+ <td class="cell">$2,800</td> 
+ <td class="cell">$5,300</td> 
+ <td class="cell">$3,800</td> 
+</tr> 
+ <tr class="row"> <td class="cell">EE + Spouse</td> 
+ <td class="cell">$8,550</td> 
+ <td class="cell">$3,500</td> 
+ <td class="cell">$5,050</td> 
+ <td class="cell">$9,550</td> 
+ <td class="cell">$6,050</td> 
+</tr> 
+ <tr class="row"> <td class="cell">EE + Children</td> 
+ <td class="cell">$8,550</td> 
+ <td class="cell">$3,500</td> 
+ <td class="cell">$5,050</td> 
+ <td class="cell">$9,550</td> 
+ <td class="cell">$6,050</td> 
+</tr> 
+ <tr class="row"> <td class="cell">EE + Family</td> 
+ <td class="cell">$8,550</td> 
+ <td class="cell">$4,000</td> 
+ <td class="cell">$4,550</td> 
+ <td class="cell">$9,550</td> 
+ <td class="cell">$5,550</td> 
+</tr> 
+</tbody> 
+</table> 
+</div> 
+</div> 
+</div> 
+ <div id="widget_r48" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="divider" data-external-id="1924630012"> <div class="dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1924630012"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1663854967"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="af8e88dd" data-auto="flex-section" id="1654328918" data-layout-section=""> <div class="flex-widgets-container" id="1015707572"></div> 
+ <section id="a8f7c774" class="flex-element section" data-auto="flex-element-section"> <div id="5fd291ba" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="3c903530" class="flex-element group" data-auto="flex-element-group"> <div id="75578d9f" class="flex-element group" data-auto="flex-element-group"> <div id="widget_bn6" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1988814024"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1988814024" style=""><p class="text-align-center m-size-21 m-text-align-center size-26"><span class="m-font-size-21 font-size-26" style="font-weight:700;display:unset;font-family:Anybody, 'Anybody Fallback';">Click on a question below to learn more about your HSA!</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="ce347b20" data-auto="flex-section" id="1150093825" data-layout-section=""> <div class="flex-widgets-container" id="1301924594"></div> 
+ <section id="62760eee" class="flex-element section" data-auto="flex-element-section"> <div id="0fc01701" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="9c1b0801" class="flex-element group" data-auto="flex-element-group"> <div id="fdd890a7" class="flex-element group" data-auto="flex-element-group"> <div id="widget_lom" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1934044507"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1934044507" style=""><p class="text-align-center m-text-align-center m-size-19 size-24"><a href="hsa-rules.html" runtime_url="/hsa-rules" popup_target="hsa-rules" type="popup" link_type="popup" class="font-size-24 m-font-size-19" style="color:rgb(0, 0, 0);display:initial;font-family:Anybody, 'Anybody Fallback';">How does this work?</a></p><p class="text-align-center m-text-align-center"><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <div id="widget_a8c" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1754087240"> <div class="imageWidget align-center u_1754087240" data-element-type="image" data-widget-type="image" id="1754087240"> <a href="hsa-rules.html" id="1845098929" link_type="popup" file="false" popup_target="hsa-rules"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/search+%281%29-1920w.png" alt="" id="1284684191" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/search+%281%29.png" width="512" height="512" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+ <div id="group_vc1" class="flex-element group" data-auto="flex-element-group"> <div id="widget_fjc" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1292192953"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1292192953" style=""><p class="m-size-19 m-text-align-center text-align-center size-24"><a href="hsa-qualified-expenses.html" runtime_url="/hsa-qualified-expenses" popup_target="hsa-qualified-expenses" type="popup" link_type="popup" class="m-font-size-19 font-size-24" style="color:rgb(0, 0, 0);display:initial;font-family:Anybody, 'Anybody Fallback';">How to use HSA funds?</a></p></div> 
+</div> 
+ <div id="widget_lst" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1218800822"> <div class="imageWidget align-center u_1218800822" data-element-type="image" data-widget-type="image" id="1218800822"> <a href="hsa-qualified-expenses.html" id="1570441021" link_type="popup" file="false" popup_target="hsa-qualified-expenses"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/debt-1920w.png" alt="" id="1186841885" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/debt.png" width="512" height="512" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+ <div id="group_p4c" class="flex-element group" data-auto="flex-element-group"> <div id="bd992c1f" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1160488581"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1160488581" style=""><p class="m-size-19 m-text-align-center text-align-center size-24"><a href="hsa--use-debit-card.html" runtime_url="/hsa--use-debit-card" popup_target="hsa--use-debit-card" type="popup" link_type="popup" style="color:rgb(0, 0, 0);display:unset;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-19 font-size-24">How to get a Debit Card?</a></p><p class="m-text-align-center text-align-center"><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <div id="widget_53l" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1240186506"> <div class="imageWidget align-center u_1240186506" data-element-type="image" data-widget-type="image" id="1240186506"> <a href="hsa--use-debit-card.html" id="1868667950" link_type="popup" file="false" popup_target="hsa--use-debit-card"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/credit-cards-1920w.png" alt="" id="1968137596" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/credit-cards.png" width="512" height="512" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="97ea517c" data-auto="flex-section" id="1278931627" data-layout-section=""> <div class="flex-widgets-container" id="1812048731"></div> 
+ <section id="d8a9801d" class="flex-element section" data-auto="flex-element-section"> <div id="f60d71bd" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="e0011495" class="flex-element group" data-auto="flex-element-group"> <div id="f64c0197" class="flex-element group" data-auto="flex-element-group"> <div id="bfc28768" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1771127653"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1771127653" style=""> <h2 class="m-size-19 text-align-center size-24"><span class="m-font-size-19 font-size-24" style="color:rgb(255, 255, 255);font-weight:bold;display:unset;font-family:Anybody, 'Anybody Fallback';"><span class="m-font-size-19 font-size-24" style="color:rgb(255, 255, 255);font-weight:bold;display:unset;font-family:Anybody, 'Anybody Fallback';">Have questions or need help enrolling?</span> 
+</span></h2> 
+</div> 
+</div> 
+ <div id="43f3b8bd" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1483838953"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient flexButton u_1483838953" file="false" href="enrollassist.html" data-element-type="dButtonLinkId" id="1483838953" link_type="popup" popup_target="enrollassist"> <span class="iconBg" aria-hidden="true" id="1929477628"> <span class="icon hasFontIcon icon-star" id="1805887247"></span> 
+</span> 
+ <span class="text" id="1353802508">Send us an email!</span> 
+</a> 
+</div> 
+</div> 
+ <div id="group_ml5" class="flex-element group" data-auto="flex-element-group"> <div id="widget_q46" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1793731090"> <div class="imageWidget align-center u_1793731090" data-element-type="image" data-widget-type="image" id="1793731090"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Kodiak+Bear+-+White-1920w.png" alt="" id="1573597547" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Kodiak+Bear+-+White.png" width="1250" height="1063" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div data-flex-id="62a63883fdd2b461c331afd8" data-auto="flex-section" id="1442172201" data-layout-section=""> <div class="flex-widgets-container" id="1326753413"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1117536195" style=""> <h1 class="m-size-35 text-align-center size-50"><span class="m-font-size-35 font-size-50" m-font-size-set="true" style="font-weight: normal; color: rgb(26, 27, 31); display: unset;">Add your title here</span></h1> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1730177244" style=""><p class="text-align-center size-18 m-size-16" style="line-height: 1.5;"><span class="font-size-18 m-font-size-16" style="display: initial; color: rgb(26, 27, 31);"><span class="font-size-18 m-font-size-16" m-font-size-set="true" style="display: initial; color: rgb(26, 27, 31);">This is the text area for this paragraph. To change it, simply click and start typing. Once you've added your content, you&nbsp; can customize its design by using different colors, fonts, font sizes and bullets. Just highlight the words you want to design and choose from the various options in the text editing bar. <br/><br/>This is the text area for this paragraph. To change it, simply click and start typing. After adding your content, you can customize it.</span> 
+</span></p></div> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="index.html" data-element-type="dButtonLinkId" id="1542726725"> <span class="iconBg" id="1804448980"> <span class="icon hasFontIcon icon-star" id="1515672604"></span> 
+</span> 
+ <span class="text" id="1439297474">Learn more</span> 
+</a> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1093522200" style=""><p class="text-align-left size-18 m-size-16 m-text-align-left" style="line-height: 1.5;"><span class="font-size-18 m-font-size-16" style="color: rgb(26, 27, 31); display: initial;"><span class="font-size-18 m-font-size-16" m-font-size-set="true" style="color: rgb(26, 27, 31); display: initial;">This is the text area for this paragraph. To change it, simply click and start typing. Once you've added your content, you&nbsp; can customize its design by using different colors, fonts, font sizes and bullets. Just highlight the words you want to design and choose from the various options in the text editing bar.</span> 
+</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1848128005" style=""> <h3 class="size-32 m-size-26"><span style="display: unset; color: rgb(26, 27, 31);" class="font-size-32 m-font-size-26">Short title</span></h3> 
+</div> 
+</div> 
+ <section id="62a63883fdd2b461c331afd9" class="flex-element section" data-auto="flex-element-section"> <div id="62a63883fdd2b461c331afdd" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62a63883fdd2b461c331afda" class="flex-element group" data-auto="flex-element-group"> <div id="62a63891fdd2b461c331b27a" class="flex-element group" data-auto="flex-element-group"> <div id="62a638b8fdd2b461c331b963" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1870543438"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="http://kodiak-gas-services.benefitsinfo.com/Portfolio" data-element-type="dButtonLinkId" id="1870543438"> <span class="iconBg" id="1830643420"> <span class="icon hasFontIcon icon-star" id="1365747978"></span> 
+</span> 
+ <span class="text" id="1556648095">Portfolio</span> 
+</a> 
+</div> 
+</div> 
+ <div id="62a63893fdd2b461c331b3a4" class="flex-element group" data-auto="flex-element-group"> <div id="62a638c0fdd2b461c331ba64" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1394321023"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="enrollassist-contact-form.html" data-element-type="dButtonLinkId" id="1394321023"> <span class="iconBg" id="1542843608"> <span class="icon hasFontIcon icon-star" id="1869642430"></span> 
+</span> 
+ <span class="text" id="1055731404">Get in touch</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_5539";
+    var build = "2025-06-12T13_20_37";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2025-06-12T13_20_37";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script type="text/javascript">
+    window.popups =
+    [{"title":"HSA- Use Debit Card","url":"/hsa--use-debit-card","options":{"backgroundColor":"#FFFFFF","borderRadius":"5","width":"672","overlayColor":"rgba(0, 0, 0, 0.5)","height":"730","animation":"fadeIn"},"name":"hsa--use-debit-card"},{"title":"HSA Rules","url":"/hsa-rules","options":{"backgroundColor":"#FFFFFF","borderRadius":"5","width":"672.84375","overlayColor":"rgba(0, 0, 0, 0.5)","height":"730","animation":"fadeIn"},"name":"hsa-rules"},{"title":"HSA Qualified Expenses","url":"/hsa-qualified-expenses","options":{"backgroundColor":"#FFFFFF","borderRadius":"5","width":"672","overlayColor":"rgba(0, 0, 0, 0.5)","height":"730","animation":"fadeIn"},"name":"hsa-qualified-expenses"},{"title":"Enrollassist","url":"/enrollassist","options":{"backgroundColor":"#FFFFFF","borderRadius":"5","width":"764","overlayColor":"rgba(0, 0, 0, 0.5)","height":"420","animation":"fadeIn"},"name":"enrollassist"}]</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/5539';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/5539';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+    rtCommonProps["streamline.monolith.personalization.skipRuleConditionsForPreview.enabled"] =false;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["runtime.cwv.report.cls.enabled"] =true;
+    rtFlags["editor.link.on.container"] =true;
+    rtFlags["flex.runtime.popup.with.show"] =true;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["flex.megaMenu.a11y"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/5539/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/5539/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+    if (!window.location.search) {
+        return;
+    }
+	const cleanParams = window.location.search.substring(1); // Strip ?
+	const queryParams = cleanParams.split('&');
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((param) => {
+		const [key, value = ''] = param.split('=');
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: 'f138101c'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: f138101c -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

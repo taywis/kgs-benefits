@@ -1,0 +1,4011 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://kodiak-gas-services.benefitsinfo.com/',
+        AccountUUID: '301b401a11634dfaabe4859de00d36fc',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: 'f138101c',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Thu Jun 12 15:59:36 UTC 2025',
+        ExternalUid: null,
+        IsSiteMultilingual: true,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'es-mx/education-center',
+        InitialPageUuid: '58eeb83c3f3a49c4aa8f1f8a37ceb804',
+        InitialPageId: '37062714',
+        InitialEncodedPageAlias: 'ZXMtbXgvZWR1Y2F0aW9uLWNlbnRlcg==',
+        InitialHeaderUuid: 'a416d006572d41fc873b921b46953b9d',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: false,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '/es-mx/education-center',
+        isFastMigrationSite: false,
+        sidebarPosition: 'LEFT',
+        currentLanguage: 'es',
+        currentLocale: 'es-mx',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://kodiak-gas-services.benefitsinfo.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'en',
+        hamburgerMigration: null,
+        isFlexSite : false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 25;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="http://kodiak-gas-services.benefitsinfo.com/es-mx/education-center">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon"
+      href="https://irp.cdn-website.com/f138101c/dms3rep/multi/KGS_BIG.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/f138101c/site_favicon_16_1730375617614.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(21, 98, 70, 1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Anybody:ital,wght@0,100..900;1,100..900&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/5547/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/15016cde1cac9f70b2976f870d15505c.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="es-mx/education-center"] #dm [data-show-on-page-only="es-mx/education-center"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/f138101c/files/f138101c_es-mx_header_1.min.css?v=904" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1647558846 img[dm_changed]
+{
+	object-position:50% 50% !important;
+	object-fit:cover !important;
+}
+*#dm *.dmBody div.u_1647558846 img
+{
+	object-position:50% 50% !important;
+	object-fit:cover !important;
+}
+.u_1868198294
+{
+}
+*#dm *.dmBody div.u_1267807526
+{
+	border-style:solid !important;
+	border-color:rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) !important;
+	border-width:1.25px 1.25px 1.25px 1.25px !important;
+}
+*.dmFooterContainer
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1865622640 span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1286176634 span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1212233242 span.text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1990617915 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody nav.u_1096742937
+{
+	color:black !important;
+}
+*#dm *.dmBody a.u_1430972080 span.text
+{
+	color:rgba(255,255,255,1) !important;
+	font-family:Anybody !important;
+	font-weight:500 !important;
+}
+*#dm *.dmBody a.u_1430972080
+{
+	border-style:solid !important;
+	border-width:1.25px 1.25px 1.25px 1.25px !important;
+	border-color:rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) rgba(255,255,255,1) !important;
+	background-color:rgba(244,189,72,1) !important;
+	background-image:initial !important;
+	border-radius:9px 9px 9px 9px !important;
+}
+*#dm *.dmBody *.u_1414446585
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1414446585 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1879995450
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1879995450 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1636176595
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1636176595 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1832156200
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1832156200 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody div.u_1164287307 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1164287307
+{
+	width:100% !important;
+}
+*#dm *.dmBody *.u_1307752773
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1307752773 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1012972702
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1012972702 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1624703438
+{
+	width:100% !important;
+}
+*#dm *.dmBody div.u_1624703438 img
+{
+	object-fit:contain !important;
+}
+*#dm *.dmBody *.u_1114864396
+{
+	width:100% !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+ <style id="grid-styles-desktop-62a7224efdd2b461c3378034-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\36 2a7224efdd2b461c3378036 {
+    align-self: start;
+    background-size: cover;
+    min-height: 356px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    padding: 50px 0% 50px 0%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a7224efdd2b461c3378039 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\36 2a7224efdd2b461c3378038::before, #\36 2a7224efdd2b461c3378038 > .bgExtraLayerOverlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    border-radius: inherit;
+    content: '';
+    background-color: rgba(0, 0, 0, 1);
+}
+#\36 2a7224efdd2b461c3378038 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+    background-image: url(https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/pexels-photo-3820064-2880w.jpeg);
+}
+    
+#\36 2a7224efdd2b461c3378037 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 20px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    min-width: 4%;
+    padding: 16px 16px 16px 16px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    position: relative;
+    width: 100.00%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: auto;
+    justify-self: auto;
+    order: 0;
+    margin: 0px 0% 20px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#b2b9d237.flex-element.widget-wrapper > [data-element-type] {
+    padding: 7px 7px 7px 7px;
+}
+#b2b9d237 {
+    position: relative;
+    width: 39.43%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: flex-end;
+    justify-self: auto;
+    order: 1;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62a7224efdd2b461c3378034-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62a7224efdd2b461c3378034-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2a7224efdd2b461c3378036 {
+    min-height: 271px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px 0px 20px 0px;
+}
+    
+#\36 2a7224efdd2b461c3378037 {
+    width: 100%;
+    min-height: 8px;
+    padding: 0px 16px 0px 8px;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    width: 100.00%;
+    align-self: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    order: 0;
+}
+    
+#b2b9d237 {
+    width: 53.74%;
+    align-self: flex-end;
+    justify-self: auto;
+    order: 1;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\36 2a7224efdd2b461c3378039 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62a7224efdd2b461c3378034-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 1400px) {
+    
+#\36 2a7224efdd2b461c3378037 {
+    width: 100%;
+    min-height: 8px;
+    justify-content: center;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    align-self: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+    
+#\36 2a7224efdd2b461c3378036 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 423px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    
+#b2b9d237 {
+    align-self: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 55%;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62a7224efdd2b461c3378034-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 766px) {
+    
+#\36 2a7224efdd2b461c3378036 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a7224efdd2b461c3378038 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62a7224efdd2b461c3378034-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\36 2a7224efdd2b461c3378036 {
+    min-height: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0px 0% 8px 0%;
+}
+    
+#\36 2a7224efdd2b461c3378037 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: flex-end;
+    padding: 0px 0px 8px 8px;
+}
+    
+#\36 2a72291fdd2b461c3378609 {
+    width: 100%;
+    align-self: stretch;
+    max-width: none;
+    order: 0;
+    margin: 0px 0px 0px 0%;
+}
+    
+#b2b9d237 {
+    width: 95.53%;
+    align-self: auto;
+    max-width: none;
+    justify-self: auto;
+    order: 1;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\36 2a7224efdd2b461c3378039 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62a7224efdd2b461c3378034-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\36 2a72291fdd2b461c3378609 {
+    align-self: flex-start;
+    margin: 0px 0px 0px 0%;
+}
+    
+#b2b9d237 {
+    align-self: center;
+    width: 47.01%;
+    margin: 0px 0px 0px 0%;
+}
+    
+#\36 2a7224efdd2b461c3378037 {
+    padding-top: 16px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-15747dfb-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\37 90bd718 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 15px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#d13c8f5d {
+    align-self: start;
+    background-size: cover;
+    padding-left: 0px;
+    min-height: 97px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    padding-right: 0px;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#cc1cb717 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#bfe3f5e0 {
+    position: relative;
+    width: 99.9987793004229%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#cbf4a359 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 100% 50%;
+    align-items: start;
+    position: relative;
+    background-image: initial;
+    background-color: rgba(12, 86, 64, 1);
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-15747dfb-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-15747dfb-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#d13c8f5d {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+}
+    
+#cc1cb717 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-15747dfb-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 1400px) {
+    
+#\37 90bd718 {
+    width: 100%;
+    min-height: 8px;
+}
+    
+#d13c8f5d {
+    padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 87px;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-15747dfb-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 766px) {
+    
+#d13c8f5d {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#cbf4a359 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-15747dfb-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\37 90bd718 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#d13c8f5d {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-wrap: nowrap;
+    padding: 0px 0% 0px 0%;
+}
+    
+#cc1cb717 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-15747dfb-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+}</style> 
+
+
+ <style id="grid-styles-desktop-62a72382fdd2b461c3379dd6-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\36 2a72382fdd2b461c3379dd5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\36 2a72382fdd2b461c3379dd7 {
+    background-position: 100% 50%;
+    background-image: initial;
+    background-color: rgba(217, 216, 214, 0.5);
+}
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    padding-left: 0px;
+    min-height: 1058px;
+    column-gap: 2%;
+    row-gap: 12px;
+    width: 100%;
+    padding-right: 0px;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a72592fdd2b461c337af46 {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    width: 100%;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#widget_osr {
+    width: 99.9987793004229%;
+    height: 1364px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: center;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62a72382fdd2b461c3379dd6-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62a72382fdd2b461c3379dd6-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    min-height: 2079px;
+}
+    
+#\36 2a72382fdd2b461c3379dd5 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#widget_osr {
+    width: 98.99%;
+    height: 2072px;
+    align-self: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62a72382fdd2b461c3379dd6-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 1400px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 64px;
+}
+    
+#\36 2a72592fdd2b461c337af46 {
+    width: 100%;
+    min-height: 8px;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62a72382fdd2b461c3379dd6-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 766px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a72382fdd2b461c3379dd7 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62a72382fdd2b461c3379dd6-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\36 2a72382fdd2b461c3379dd8 {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 0px;
+    flex-wrap: nowrap;
+    padding: 20px 0% 10px 0%;
+}
+    
+#\36 2a72592fdd2b461c337af46 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\36 2a72382fdd2b461c3379dd5 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#widget_osr {
+    width: 98.88%;
+    height: 3904px;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62a72382fdd2b461c3379dd6-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+    
+#widget_osr {
+    width: 99.43%;
+    height: 2086px;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-e802e9bf-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\37 184b8a5 {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    width: 50%;
+    min-width: 4%;
+    padding: 16px 16px 16px 16px;
+}
+    
+#a02705ac {
+    min-height: 240px;
+    column-gap: 0%;
+    row-gap: 0px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+    
+#c75db6d2 {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    width: 50%;
+    min-width: 4%;
+    padding: 16px 16px 16px 16px;
+}
+    
+#aaadf803 {
+    background-color: rgba(217, 216, 214, 0.5);
+    background-image: initial;
+}
+    
+#widget_tv7 {
+    width: 74.45463872921688%;
+    height: 219px;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: center;
+    justify-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_o8n {
+    width: 74.5%;
+    height: 219px;
+    position: relative;
+    min-width: 10px;
+    min-height: 100px;
+    max-width: 100%;
+    align-self: center;
+    justify-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_qdi {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    order: 1;
+}
+    
+#widget_1j8 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    order: 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-tablet-e802e9bf-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 768px) and (max-width: 1024px) {
+    
+#a02705ac {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+    
+#widget_o8n {
+    height: 163px;
+    order: 0;
+}
+    
+#widget_tv7 {
+    justify-self: auto;
+    align-self: center;
+    width: 84.29%;
+    order: 0;
+    height: 161px;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_qdi {
+    order: 1;
+}
+    
+#widget_1j8 {
+    justify-self: auto;
+    align-self: auto;
+    width: 99.99560223463688%;
+    order: 1;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-e802e9bf-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 1400px) {
+    
+#widget_o8n {
+    width: 72%;
+    height: 235px;
+    justify-self: auto;
+    align-self: center;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_tv7 {
+    justify-self: auto;
+    align-self: center;
+    width: 72.02904929577466%;
+    order: 0;
+    height: 235px;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_qdi {
+    order: 1;
+}
+    
+#widget_1j8 {
+    order: 1;
+    justify-self: auto;
+    align-self: auto;
+    width: 100%;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-e802e9bf-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\37 184b8a5 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#a02705ac {
+    min-height: unset;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+    
+#c75db6d2 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#widget_tv7 {
+    height: 160px;
+    width: 98.16%;
+}
+    
+#widget_o8n {
+    height: 159px;
+    width: 99.50%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-e802e9bf-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+    
+#widget_tv7 {
+    width: 65.40%;
+    height: 230px;
+}
+    
+#widget_o8n {
+    justify-self: auto;
+    align-self: auto;
+    width: 62.52%;
+    order: 0;
+    height: 219px;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_1j8 {
+    order: 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-00bd4d37-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\32 6f75c0f {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    width: 25%;
+    min-width: 4%;
+    justify-content: flex-start;
+    padding: 16px 16px 16px 16px;
+}
+    
+#ad6a4e14 {
+    min-height: 219px;
+    column-gap: 0%;
+    row-gap: 0px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+    
+#\36 c295da3 {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    width: 25%;
+    min-width: 4%;
+    justify-content: flex-start;
+    padding: 16px 16px 16px 16px;
+}
+    
+#b3aaa081 {
+    background-color: rgba(217, 219, 214, 0.5);
+    background-image: initial;
+}
+    
+#\33 bef7c15 {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    width: 25%;
+    min-width: 4%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 16px 16px 16px 16px;
+}
+    
+#\32 a9d0bd9 {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 15px;
+    width: 25%;
+    min-width: 4%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 16px 16px 16px 16px;
+}
+    
+#widget_31m {
+    width: 100%;
+    height: 142px;
+    max-width: 100%;
+    align-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_49f {
+    width: 100%;
+    height: 142px;
+    max-width: 100%;
+    align-self: auto;
+    order: 0;
+    justify-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_v9t {
+    width: 100%;
+    height: 142px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_f0n {
+    width: 100%;
+    height: 142px;
+    max-width: 100%;
+    order: 0;
+    justify-self: auto;
+    align-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_bqa {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 1;
+}
+    
+#widget_nmv {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 1;
+}
+    
+#widget_dnv {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 1;
+}
+    
+#widget_be1 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: auto;
+    order: 1;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-tablet-00bd4d37-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 768px) and (max-width: 1024px) {
+    
+#ad6a4e14 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+    
+#widget_f0n {
+    justify-self: auto;
+    align-self: auto;
+    width: 99.99020923805763%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_be1 {
+    order: 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-00bd4d37-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\32 6f75c0f {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#ad6a4e14 {
+    min-height: 0;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+    flex-wrap: nowrap;
+}
+    
+#\36 c295da3 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\33 bef7c15 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\32 a9d0bd9 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#widget_31m {
+    height: 142px;
+    width: 88.57%;
+}
+    
+#widget_49f {
+    height: 142px;
+    justify-self: auto;
+    align-self: auto;
+    width: 99.99483980120546%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_v9t {
+    height: 142px;
+    justify-self: auto;
+    align-self: auto;
+    width: 99.99483980120546%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_f0n {
+    height: 142px;
+    justify-self: auto;
+    align-self: auto;
+    width: 99.99483980120546%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_nmv {
+    order: 1;
+}
+    
+#widget_dnv {
+    order: 1;
+}
+    
+#widget_be1 {
+    order: 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-00bd4d37-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+    
+#widget_f0n {
+    width: 41.11%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-d98b5691-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\35 5826df7 {
+    align-self: stretch;
+    padding-top: 20px;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+}
+    
+#\30 4bb8ff7 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#f3714787 {
+    align-self: start;
+    background-size: cover;
+    display: flex;
+    padding-bottom: 10px;
+    min-height: 146px;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    order: 0;
+    flex-wrap: nowrap;
+}
+    
+#widget_s9l {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    align-self: center;
+    order: 0;
+}
+    
+#widget_mrh {
+    width: 76.74717277258657%;
+    height: auto;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: center;
+    order: 1;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-tablet-d98b5691-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 768px) and (max-width: 1024px) {
+    
+#f3714787 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-d98b5691-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\35 5826df7 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#f3714787 {
+    min-height: 0;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+    flex-wrap: nowrap;
+}
+    
+#widget_mrh {
+    width: 99.82%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-71d2c7f4-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\36 1201935 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#a0c6f9d9 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 10px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 32%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 16px 16px 16px 16px;
+}
+    
+#babd068d {
+    align-self: start;
+    background-size: cover;
+    display: flex;
+    min-height: 240px;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    order: 0;
+    flex-wrap: nowrap;
+}
+    
+#\38 1ce7359 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 10px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 32%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 16px 16px 16px 16px;
+}
+    
+#b9666c30 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+    
+#c55105f8 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 10px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 32%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 16px 16px 16px 16px;
+}
+    
+#widget_fop {
+    width: 98.3%;
+    height: 156px;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+}
+    
+#widget_k52 {
+    width: 98.3%;
+    height: 156px;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+}
+    
+#widget_qpc {
+    width: 98.3%;
+    height: 156px;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+}
+    
+#widget_88f {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+}
+    
+#widget_r6t {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+}
+    
+#widget_6l8 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+}
+}</style> 
+
+
+ <style id="grid-styles-tablet-71d2c7f4-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 768px) and (max-width: 1024px) {
+    
+#babd068d {
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: 213px;
+}
+    
+#widget_fop {
+    height: 110px;
+    justify-self: auto;
+    align-self: auto;
+    width: 98.29984974298142%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_k52 {
+    height: 110px;
+    justify-self: auto;
+    align-self: auto;
+    width: 98.29984974298142%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_qpc {
+    height: 110px;
+}
+    
+#widget_88f {
+    order: 1;
+}
+    
+#widget_r6t {
+    order: 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-71d2c7f4-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#a0c6f9d9 {
+    width: 100%;
+    min-height: 255px;
+    align-items: center;
+    height: auto;
+}
+    
+#babd068d {
+    min-height: 0;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+    flex-wrap: nowrap;
+    row-gap: 5px;
+}
+    
+#\38 1ce7359 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#c55105f8 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#widget_fop {
+    height: 162px;
+}
+    
+#widget_k52 {
+    height: 162px;
+}
+    
+#widget_qpc {
+    height: 162px;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-71d2c7f4-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+    
+#widget_88f {
+    justify-self: auto;
+    align-self: auto;
+    width: 100%;
+    order: 1;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_fop {
+    order: 0;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-af8e88dd-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\33 c903530 {
+    align-self: start;
+    background-size: cover;
+    padding-left: 0px;
+    min-height: 97px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    padding-right: 0px;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#a8f7c774 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\35 fd291ba {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 100% 50%;
+    align-items: start;
+    position: relative;
+    background-image: initial;
+    background-color: rgba(244, 189, 72, 1);
+}
+    
+#widget_bn6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+}
+    
+#ReferenceDocuments {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 15px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-af8e88dd-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-af8e88dd-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\33 c903530 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+}
+    
+#a8f7c774 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-af8e88dd-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 1400px) {
+    
+#\33 c903530 {
+    padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 87px;
+}
+    
+#ReferenceDocuments {
+    width: 100%;
+    min-height: 8px;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-af8e88dd-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 766px) {
+    
+#\33 c903530 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\35 fd291ba {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-af8e88dd-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\33 c903530 {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-wrap: nowrap;
+    padding: 0px 0% 0px 0%;
+}
+    
+#a8f7c774 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#ReferenceDocuments {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-af8e88dd-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+}</style> 
+
+
+ <style id="grid-styles-desktop-9c25c0bc-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\37 3988212 {
+    background-position: 100% 50%;
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0);
+}
+    
+#d9d0c0eb {
+    padding-left: 0px;
+    min-height: 794px;
+    column-gap: 3%;
+    row-gap: 18px;
+    width: 100%;
+    padding-right: 0px;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#be4af2ce {
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 11px;
+    width: 28%;
+    justify-content: flex-start;
+    min-width: 4%;
+    background-color: rgba(192, 202, 214, 0.56);
+    background-image: initial;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0% 20px 5%;
+}
+    
+#\36 98d33ba {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#group_bpb {
+    justify-content: flex-start;
+    width: 28%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 11px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(192, 202, 214, 0.56);
+    background-image: initial;
+    padding: 10px 10px 10px 10px;
+}
+    
+#group_te0 {
+    justify-content: flex-start;
+    width: 28%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 11px;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(192, 202, 214, 0.56);
+    background-image: initial;
+    padding: 10px 10px 10px 10px;
+}
+    
+#widget_thc {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 2;
+}
+    
+#widget_ma9 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: auto;
+    order: 3;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\39 7daa06b {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    align-self: auto;
+    order: 4;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\37 ec3aa4d {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    align-self: auto;
+    order: 4;
+    justify-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#d3397fa1 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    align-self: auto;
+    order: 5;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\39 3934ae7 {
+    width: 100.00%;
+    height: auto;
+    max-width: 100%;
+    align-self: auto;
+    order: 2;
+    justify-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\34 8688fbc {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    align-self: auto;
+    order: 3;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#a9d35a7d {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    align-self: auto;
+    order: 5;
+    justify-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_t62 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 4;
+}
+    
+#widget_d2d {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 5;
+}
+    
+#widget_jt3 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 6;
+    justify-self: auto;
+    align-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_d0o {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 7;
+    justify-self: auto;
+    align-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_40v {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 2;
+    justify-self: auto;
+    align-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_tg8 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 3;
+    justify-self: auto;
+    align-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_8u1 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 8;
+}
+    
+#widget_8qa {
+    width: 99.99452085305418%;
+    height: auto;
+    max-width: 100%;
+    order: 9;
+    justify-self: auto;
+    align-self: auto;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_3ai {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 6;
+}
+    
+#widget_ggi {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 7;
+}
+    
+#widget_jjg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 0;
+}
+    
+#widget_qv4 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 1;
+}
+    
+#widget_4m0 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 6;
+}
+    
+#widget_cdp {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    order: 7;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-9c25c0bc-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-9c25c0bc-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#d9d0c0eb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+    
+#\36 98d33ba {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-9c25c0bc-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 1400px) {
+    
+#d9d0c0eb {
+    padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 591px;
+}
+    
+#be4af2ce {
+    width: 32%;
+    min-height: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+    row-gap: 11px;
+    padding: 10px 10px 10px 10px;
+}
+    
+#group_bpb {
+    width: 32%;
+    min-height: 8px;
+    justify-content: flex-start;
+    row-gap: 12px;
+    padding: 10px 10px 10px 10px;
+}
+    
+#group_te0 {
+    width: 32%;
+    min-height: 8px;
+    row-gap: 11px;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 10px;
+}
+    
+#widget_thc {
+    justify-self: auto;
+    align-self: auto;
+    width: 99.99395759935719%;
+    order: 2;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_ma9 {
+    order: 3;
+}
+    
+#\39 7daa06b {
+    order: 4;
+}
+    
+#\37 ec3aa4d {
+    justify-self: auto;
+    align-self: auto;
+    width: 99.99395759935719%;
+    order: 4;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#d3397fa1 {
+    order: 5;
+}
+    
+#\39 3934ae7 {
+    align-self: auto;
+    width: 99.99395759935719%;
+    order: 2;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#a9d35a7d {
+    order: 5;
+}
+    
+#\34 8688fbc {
+    order: 3;
+    justify-self: auto;
+    align-self: auto;
+    width: 100%;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_40v {
+    order: 2;
+    justify-self: auto;
+    align-self: auto;
+    width: 100%;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_tg8 {
+    order: 3;
+    justify-self: auto;
+    align-self: auto;
+    width: 100%;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_t62 {
+    order: 4;
+}
+    
+#widget_d2d {
+    order: 5;
+}
+    
+#widget_jt3 {
+    order: 6;
+}
+    
+#widget_d0o {
+    order: 7;
+}
+    
+#widget_8u1 {
+    order: 8;
+}
+    
+#widget_8qa {
+    order: 9;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-9c25c0bc-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 766px) {
+    
+#\37 3988212 {
+    grid-template-rows: minmax(8px, max-content);
+}
+    
+#d9d0c0eb {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-9c25c0bc-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#d9d0c0eb {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-wrap: nowrap;
+    padding: 0px 0% 0px 0%;
+}
+    
+#be4af2ce {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    row-gap: 6px;
+}
+    
+#group_bpb {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    row-gap: 11px;
+}
+    
+#group_te0 {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    row-gap: 11px;
+}
+    
+#\36 98d33ba {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#widget_d0o {
+    width: 100.00%;
+    order: 7;
+}
+    
+#widget_8qa {
+    justify-self: auto;
+    align-self: auto;
+    width: 99.9907738095238%;
+    order: 9;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#widget_thc {
+    order: 2;
+}
+    
+#widget_ma9 {
+    order: 3;
+}
+    
+#\39 7daa06b {
+    order: 4;
+}
+    
+#a9d35a7d {
+    order: 5;
+}
+    
+#widget_jt3 {
+    order: 6;
+}
+    
+#widget_8u1 {
+    order: 8;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-9c25c0bc-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+}</style> 
+
+
+ <style id="grid-styles-desktop-27ee9c05-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media all {
+    
+#\35 abe7e3c {
+    min-height: 160px;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: none;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 16px 16px 16px 16px;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#c9c4ea15 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    
+#\35 1240f41 {
+    width: 280px;
+    height: auto;
+    min-height: 9px;
+    max-width: 100%;
+    order: 0;
+    margin-top: 30px;
+    align-self: center;
+}
+    
+#\31 5bb949a {
+    align-items: center;
+    width: 73%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 0px;
+    order: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: initial;
+    border-style: solid;
+    border-width: 0 0 0 0;
+    border-color: rgba(88, 92, 90, 1) rgba(88, 92, 90, 1) rgba(88, 92, 90, 1) rgba(88, 92, 90, 1);
+    padding: 16px 16px 16px 16px;
+}
+    
+#\33 24822a4 {
+    background-color: rgba(12, 86, 64, 1);
+    background-image: initial;
+}
+    
+#e973d00b {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    justify-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#group_00a {
+    width: 27%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 24px;
+    padding: 16px 16px 16px 16px;
+}
+    
+#widget_sci {
+    width: 69.7%;
+    height: 156px;
+    max-width: 100%;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-27ee9c05-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-27ee9c05-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#c9c4ea15 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-27ee9c05-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 1400px) {
+    
+#\35 abe7e3c {
+    min-height: 160px;
+}
+    
+#\35 1240f41.flex-element.widget-wrapper > [data-element-type].flexButton.dmWidget {
+    padding-top: 16px;
+}
+#\35 1240f41 {
+    margin-top: 20px;
+}
+    
+#\31 5bb949a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    row-gap: 15px;
+}
+    
+#widget_sci {
+    justify-self: auto;
+    align-self: auto;
+    width: 69.69110670068991%;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-27ee9c05-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 766px) {
+    
+#\35 abe7e3c {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\33 24822a4 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-27ee9c05-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (max-width: 767px) {
+    
+#\35 abe7e3c {
+    min-height: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 16px;
+    padding: 10px 0% 10px 0%;
+}
+    
+#\31 5bb949a {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    row-gap: 0px;
+}
+    
+#group_00a {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    padding-top: 0px;
+    row-gap: 0px;
+}
+    
+#widget_sci {
+    height: 130px;
+    width: 55%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-27ee9c05-58eeb83c3f3a49c4aa8f1f8a37ceb804" data-page-uuid="58eeb83c3f3a49c4aa8f1f8a37ceb804">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\35 abe7e3c {
+    padding-right: 0%;
+    padding-left: 0%;
+}
+    
+#c9c4ea15 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-62a63883fdd2b461c331afd8-a416d006572d41fc873b921b46953b9d" data-page-uuid="a416d006572d41fc873b921b46953b9d" data-is-header="true">@media all {
+    
+#\36 2a63883fdd2b461c331afda {
+    align-self: start;
+    background-size: cover;
+    min-height: 140px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a63883fdd2b461c331afdd {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+}
+    
+#\36 2a63883fdd2b461c331afd9 {
+    margin: 0px 6% 0px 6%;
+}
+    
+#\36 2a63891fdd2b461c331b27a {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 35px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 48%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a63893fdd2b461c331b3a4 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 35px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 48%;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a638b8fdd2b461c331b963 {
+    position: relative;
+    width: 230px;
+    height: 55px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: center;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\36 2a638c0fdd2b461c331ba64 {
+    position: relative;
+    width: 230px;
+    height: 55px;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 100%;
+    justify-self: auto;
+    align-self: flex-start;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62a63883fdd2b461c331afd8-a416d006572d41fc873b921b46953b9d" data-page-uuid="a416d006572d41fc873b921b46953b9d" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62a63883fdd2b461c331afd8-a416d006572d41fc873b921b46953b9d" data-page-uuid="a416d006572d41fc873b921b46953b9d" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2a63883fdd2b461c331afda {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 140px;
+    padding: 70px 4% 70px 4%;
+}
+    
+#\36 2a63891fdd2b461c331b27a {
+    width: 48%;
+    min-height: 8px;
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 2a63893fdd2b461c331b3a4 {
+    width: 48%;
+    min-height: 8px;
+    padding: 0px 0px 0px 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62a63883fdd2b461c331afd8-a416d006572d41fc873b921b46953b9d" data-page-uuid="a416d006572d41fc873b921b46953b9d" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62a63883fdd2b461c331afd8-a416d006572d41fc873b921b46953b9d" data-page-uuid="a416d006572d41fc873b921b46953b9d" data-is-header="true">@media (max-width: 766px) {
+    
+#\36 2a63883fdd2b461c331afda {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2a63883fdd2b461c331afdd {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62a63883fdd2b461c331afd8-a416d006572d41fc873b921b46953b9d" data-page-uuid="a416d006572d41fc873b921b46953b9d" data-is-header="true">@media (max-width: 767px) {
+    
+#\36 2a63883fdd2b461c331afda {
+    min-height: 0;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: nowrap;
+    padding: 30px 4% 30px 4%;
+}
+    
+#\36 2a63891fdd2b461c331b27a {
+    width: 100%;
+    min-height: 80px;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    row-gap: 15px;
+}
+    
+#\36 2a63893fdd2b461c331b3a4 {
+    width: 100%;
+    min-height: 80px;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    row-gap: 15px;
+}
+    
+#\36 2a638b8fdd2b461c331b963 {
+    align-self: center;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2a638c0fdd2b461c331ba64 {
+    align-self: center;
+    margin: 0px 0px 0px 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62a63883fdd2b461c331afd8-a416d006572d41fc873b921b46953b9d" data-page-uuid="a416d006572d41fc873b921b46953b9d" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+}</style> 
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-72, .size-72, .size-72 > font { font-size: 72px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-32, .size-32, .size-32 > font { font-size: 32px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-50, .size-50, .size-50 > font { font-size: 50px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Averia Serif Libre Fallback";
+  src: local('Arial');
+  ascent-override: 86.2985%;
+  descent-override: 21.9523%;
+  line-gap-override: 8.6865%;
+  size-adjust: 103.4292%;
+}@font-face {
+  font-family: "Anybody Fallback";
+  src: local('Arial');
+  ascent-override: 71.036%;
+  descent-override: 21.4448%;
+  size-adjust: 111.915%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<link rel="alternate" hreflang="en" href="../Education-Center.html" />
+
+<link rel="alternate" hreflang="x-default" href="../Education-Center.html" />
+
+<link rel="alternate" hreflang="es-mx" href="http://kodiak-gas-services.benefitsinfo.com/es-mx/education-center" />
+
+
+
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://kodiak-gas-services.benefitsinfo.com/es-mx/education-center">
+
+  <title>
+    Kodiak Gas Services
+  </title>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Kodiak Gas Services"/>
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/KGS_BIG-1920w.png"/>
+  <meta property="og:title" content="Kodiak Gas Services"/>
+  <meta property="og:image" content="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/KGS_BIG-1920w.png"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="es-mx/education-center"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper fullSidebarLayout-var5 null fullSidebarLayout">
+         <div dmwrapped="true" id="1785920551"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopSideBarTabletHamburger" class="fullSidebarLayout dm-bfs dm-layout-sec hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 hamburger-reverse layout-drawer_fixed-header dmPageBody d-page-1125715846 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1125715846" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="5ff40d2f36ae4e5ea1bc96b2e2fcf67e===header" data-origin="top"> <div class="u_1556751554 dmRespRow" style="text-align: center;" id="1556751554"> <div class="dmRespColsWrapper" id="1247036391"> <div class="u_1873655022 dmRespCol small-12 medium-12 large-12 empty-column" id="1873655022"></div> 
+</div> 
+</div> 
+ <div class="u_1546108297 dmRespRow middleDrawerRow" style="text-align: center;" id="1546108297"> <div class="dmRespColsWrapper" id="1263747568"> <div class="dmRespCol small-12 u_1926393063 medium-12 large-12" id="1926393063"> <nav class="u_1096742937 effect-float main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_4" layout-sub="" data-show-vertical-sub-items="SHOW" id="1096742937" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="../es-mx.html" class="unifiednav__item  dmUDNavigationItem_010101472373  " target="" data-target-page-alias="es-mx"> <span class="nav-item-text " data-link-text="Hogar" data-auto="page-text-style">Hogar<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="schedule-your-enrollment-call.html" class="unifiednav__item  dmUDNavigationItem_010101986174  " target="" data-target-page-alias="es-mx/schedule-your-enrollment-call"> <span class="nav-item-text " data-link-text="Programe su llamada de inscripción" data-auto="page-text-style">Programe su llamada de inscripci&oacute;n<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html" class="unifiednav__item  dmUDNavigationItem_010101325708  " target="" data-target-page-alias="es-mx/benefits-guide"> <span class="nav-item-text " data-link-text="Guía de beneficios" data-auto="page-text-style">Gu&iacute;a de beneficios<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="education-center.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101436714  " target="" data-target-page-alias="es-mx/education-center" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Centro educativo" data-auto="page-text-style">Centro educativo<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="health-savings-account.html" class="unifiednav__item  dmUDNavigationItem_010101334827  " target="" data-target-page-alias="es-mx/health-savings-account"> <span class="nav-item-text " data-link-text="Cuenta de ahorros para la salud" data-auto="page-text-style">Cuenta de ahorros para la salud<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html#MedicalPlansSummaryofBenefitsandCoverage" class="unifiednav__item  dmUDNavigationItem_010101912664  " target="" data-target-page-alias="es-mx/benefits-guide"> <span class="nav-item-text " data-link-text="Resumen de beneficios y cobertura de planes médicos" data-auto="page-text-style">Resumen de beneficios y cobertura de planes m&eacute;dicos<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-directory.html" class="unifiednav__item  dmUDNavigationItem_010101318236  " target="" data-target-page-alias="es-mx/benefits-directory"> <span class="nav-item-text " data-link-text="Directorio de beneficios" data-auto="page-text-style">Directorio de beneficios<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-frequently-asked-questions.html" class="unifiednav__item  dmUDNavigationItem_010101115721  " target="" data-target-page-alias="es-mx/benefits-frequently-asked-questions"> <span class="nav-item-text " data-link-text="Preguntas frecuentes" data-auto="page-text-style">Preguntas frecuentes<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1866713565" style="text-align: center;" id="1866713565"> <div class="dmRespColsWrapper" id="1790375733"> <div class="u_1123442441 dmRespCol small-12 medium-12 large-12 empty-column" id="1123442441"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="dmRespRow" id="1348419554"> <div class="dmRespColsWrapper" id="1918632672"> <div class="dmRespCol large-12 medium-12 small-12" id="1741506822"> <div id="1110954793" class="u_1110954793 multilingualWidget dropdown long-label" dmle_extension="multilingual" data-element-type="multilingual" data-display="dropdownLongLabel" icon="false" surround="false"> <div class="desktopMultilingual"> <div class="language current-language"> <a href="education-center.html" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/mx.png" alt="Español" data-code="" onerror="handleImageLoadError(this)"/> <span class="name">Espa&ntilde;ol</span> 
+ <span class="short-label">es</span> 
+ <div class="dm-icon dm-icon-chevron-down"></div> 
+</a> 
+</div> 
+ <div class="language other-languages"> <a href="https://kodiak-gas-services.benefitsinfo.com/Education-Center" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/us.png" alt="English" onerror="handleImageLoadError(this)"/> <span class="name">English</span> 
+ <span class="short-label">en</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1705692124 dmRespRow" style="text-align: center;" id="1705692124"> <div class="dmRespColsWrapper" id="1469942216"> <div class="u_1613838574 dmRespCol small-12 medium-12 large-12" id="1613838574"> <div class="u_1415835595 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1415835595"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/KGS_BIG-1920w.png" alt="" id="1870839822" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/KGS_BIG.png" width="1583" height="472" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="hasGenericSidebar sidebarLeft"> <div id="siteSidebar" class="genericSidebar sideheader u_sideheader u_siteSidebar p_hfcontainer showOnLarge" data-global-position="true" data-no-rows-wrapper="true" data-no-full-height="true" data-has-layouts="true" data-has-small-screen="true"> <div id="sbcontainer" class="sbcontainer" layout="SHARD2e432cda0764b4255a28ec48b399dd413===header"> <div class="u_1690763676 dmRespRow" style="text-align: center;" id="1690763676"> <div class="dmRespColsWrapper" id="1406870404"> <div class="dmRespCol small-12 medium-12 large-12" id="1386444151"> <div class="u_1533289993 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1533289993"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Kodiak+logo+white-1920w.png" id="1099577100" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Kodiak+logo+white.png" width="1583" height="472" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1410382645 dmRespRow middleDrawerRow" style="text-align: center;" id="1410382645"> <div class="dmRespColsWrapper" id="1785181276"> <div class="dmRespCol small-12 medium-12 large-12" id="1430801864"> <nav class="u_1853900254 unifiednav_vertical effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_1" layout-sub="" data-show-vertical-sub-items="HOVER" id="1853900254" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="../es-mx.html" class="unifiednav__item  dmUDNavigationItem_010101472373  " target="" data-target-page-alias="es-mx"> <span class="nav-item-text " data-link-text="Hogar" data-auto="page-text-style">Hogar<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="schedule-your-enrollment-call.html" class="unifiednav__item  dmUDNavigationItem_010101986174  " target="" data-target-page-alias="es-mx/schedule-your-enrollment-call"> <span class="nav-item-text " data-link-text="Programe su llamada de inscripción" data-auto="page-text-style">Programe su llamada de inscripci&oacute;n<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html" class="unifiednav__item  dmUDNavigationItem_010101325708  " target="" data-target-page-alias="es-mx/benefits-guide"> <span class="nav-item-text " data-link-text="Guía de beneficios" data-auto="page-text-style">Gu&iacute;a de beneficios<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="education-center.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101436714  " target="" data-target-page-alias="es-mx/education-center" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Centro educativo" data-auto="page-text-style">Centro educativo<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="health-savings-account.html" class="unifiednav__item  dmUDNavigationItem_010101334827  " target="" data-target-page-alias="es-mx/health-savings-account"> <span class="nav-item-text " data-link-text="Cuenta de ahorros para la salud" data-auto="page-text-style">Cuenta de ahorros para la salud<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-guide.html#MedicalPlansSummaryofBenefitsandCoverage" class="unifiednav__item  dmUDNavigationItem_010101912664  " target="" data-target-page-alias="es-mx/benefits-guide"> <span class="nav-item-text " data-link-text="Resumen de beneficios y cobertura de planes médicos" data-auto="page-text-style">Resumen de beneficios y cobertura de planes m&eacute;dicos<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-directory.html" class="unifiednav__item  dmUDNavigationItem_010101318236  " target="" data-target-page-alias="es-mx/benefits-directory"> <span class="nav-item-text " data-link-text="Directorio de beneficios" data-auto="page-text-style">Directorio de beneficios<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="benefits-frequently-asked-questions.html" class="unifiednav__item  dmUDNavigationItem_010101115721  " target="" data-target-page-alias="es-mx/benefits-frequently-asked-questions"> <span class="nav-item-text " data-link-text="Preguntas frecuentes" data-auto="page-text-style">Preguntas frecuentes<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <div id="1978742397" class="u_1978742397 default multilingualWidget dropdown long-label" dmle_extension="multilingual" data-element-type="multilingual" needs_premium_validation="true" adwords="" data-display="dropdownLongLabel" icon="true" wr="true" surround="true"> <div class="desktopMultilingual"> <div class="language current-language"> <a href="education-center.html" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/mx.png" alt="Español" data-code="" onerror="handleImageLoadError(this)"/> <span class="name">Espa&ntilde;ol</span> 
+ <span class="short-label">es</span> 
+ <div class="dm-icon dm-icon-chevron-down"></div> 
+</a> 
+</div> 
+ <div class="language other-languages"> <a href="https://kodiak-gas-services.benefitsinfo.com/Education-Center" data-code="" data-disable-ajax-navigation="true"><img src="https://dd-cdn.multiscreensite.com/flags/flags_iso/32/us.png" alt="English" onerror="handleImageLoadError(this)"/> <span class="name">English</span> 
+ <span class="short-label">en</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1734377663" style="text-align: center;" id="1734377663"> <div class="dmRespColsWrapper" id="1049577641"> <div class="dmRespCol small-12 medium-12 large-12" id="1727967028"> <a data-display-type="block" class="u_1363664647 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient flexButton" file="false" href="mailto:benefits@kodiakgas.com" data-element-type="dButtonLinkId" id="1363664647"> <span class="iconBg" aria-hidden="true" id="1349293991"> <span class="icon hasFontIcon icon-star" id="1521483009"></span> 
+</span> 
+ <span class="text" id="1139222143">Comun&iacute;quese con el Departamento de Beneficios de KGS</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="sidebarHamburger" class="u_sidebarHamburger"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+</div> 
+ <div id="siteSidebarSpacer" class="showOnLarge"></div> 
+ <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="desktopBodyBox"> <div id="iscrollBody"> <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_es-mx/education-center"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1125715846"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1841797601"> <div data-flex-id="62a7224efdd2b461c3378034" data-auto="flex-section" id="1910404561" class="u_1910404561" data-layout-section=""> <div class="flex-widgets-container" id="1486629252"> <div class="align-center text-align-center dmSocialHub gapSpacing" id="1391850946" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://twitter.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Twitter&apos;)"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://youtube.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style6" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <section id="62a7224efdd2b461c3378039" class="flex-element section" data-auto="flex-element-section"> <div id="62a7224efdd2b461c3378038" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62a7224efdd2b461c3378036" class="flex-element group" data-auto="flex-element-group"> <div id="62a7224efdd2b461c3378037" class="flex-element group" data-auto="flex-element-group"> <div id="62a72291fdd2b461c3378609" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkxlZnQiLCJkdXJhdGlvbiI6MSwiZGVsYXkiOjAsImludGVuc2l0eSI6MX19" data-external-id="1757122624"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1757122624" style=""> <h1 class="m-size-48 size-72"> <span class="font-size-72 m-font-size-48" style="color:rgb(255, 255, 255);display:initial;font-family:Anybody, 'Anybody Fallback';">Centro educativo</span> 
+</h1> 
+</div> 
+</div> 
+ <div id="b2b9d237" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJbkxlZnQiLCJkdXJhdGlvbiI6MSwiZGVsYXkiOjAsImludGVuc2l0eSI6MX19" data-external-id="1267807526"> <div class="dmNewParagraph u_1267807526" data-element-type="paragraph" data-version="5" id="1267807526" style=""> <h1 class="text-align-justify t-text-align-justify m-size-19 m-text-align-justify size-24"> <span class="font-size-24 m-font-size-19" style="color:rgb(255, 255, 255);display:initial;font-family:Anybody, 'Anybody Fallback';">T&oacute;mese unos minutos para conocer m&aacute;s sobre los valiosos beneficios disponibles para usted y su familia.</span> 
+</h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="15747dfb" data-auto="flex-section" id="1448689204" data-layout-section=""> <div class="flex-widgets-container" id="1762488219"></div> 
+ <section id="cc1cb717" class="flex-element section" data-auto="flex-element-section"> <div id="cbf4a359" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="d13c8f5d" class="flex-element group" data-auto="flex-element-group"> <div id="790bd718" class="flex-element group" data-auto="flex-element-group" data-anchor="Reference Documents"> <div id="bfe3f5e0" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1786873410"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1786873410" style=""><p class="m-text-align-center text-align-center m-size-26 size-32"> <span class="font-size-32 m-font-size-26" style="color:rgb(255, 255, 255);font-weight:bold;display:unset;font-family:Anybody, 'Anybody Fallback';">Videoteca</span> 
+</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="62a72382fdd2b461c3379dd6" data-auto="flex-section" id="1106279434" data-layout-section=""> <div class="flex-widgets-container" id="1203610011"></div> 
+ <section id="62a72382fdd2b461c3379dd5" class="flex-element section" data-auto="flex-element-section"> <div id="62a72382fdd2b461c3379dd7" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62a72382fdd2b461c3379dd8" class="flex-element group" data-auto="flex-element-group"> <div id="62a72592fdd2b461c337af46" class="flex-element group" data-auto="flex-element-group"> <div id="widget_osr" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="html" data-external-id="1120725691"> <div data-element-type="html" class="dmCustomHtml u_1120725691" id="1120725691"> <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer="">
+
+
+                                                                                                                                                                                                                                                                              
+
+                        </script> 
+ <div class="commonninja_component pid-dcbf4cd6-e114-45bb-abcf-39bb9f647945"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-layout-section="" data-auto="flex-section" id="1168376888" data-flex-id="e802e9bf"> <div class="flex-widgets-container" id="1048190021"></div> 
+ <section id="f899bb2e" class="flex-element section" data-auto="flex-element-section"> <div id="aaadf803" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="a02705ac" class="flex-element group" data-auto="flex-element-group"> <div id="7184b8a5" class="flex-element group" data-auto="flex-element-group"> <div id="widget_tv7" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1114864396"> <div class="imageWidget align-center u_1114864396" data-element-type="image" data-widget-type="image" id="1114864396"> <a href="https://info.healthequity.com/Member/DCFSA" id="1360354890" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Screenshot_7-1-2025_155747_info.healthequity.com-1920w.jpeg" alt="" id="1670026792" class="" width="641" height="363" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Screenshot_7-1-2025_155747_info.healthequity.com.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_qdi" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1386598708"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1386598708" style=""><p class="m-text-align-center text-align-center"><span style="display: unset;">FSA para el cuidado de dependientes - HealthEquity</span></p></div> 
+</div> 
+</div> 
+ <div id="c75db6d2" class="flex-element group" data-auto="flex-element-group"> <div id="widget_o8n" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="youtube" data-external-id="1237459772"> <div data-element-type="dYouTubeId" class="youtubeExt dmNoMark youtube-padding-fix" id="1237459772"> <div class="innerYoutubeExt" id="1518684228"> <iframe id="1097971135" src="https://player.vimeo.com/video/985208864" frameborder="0" allowfullscreen=""></iframe> 
+</div> 
+</div> 
+</div> 
+ <div id="widget_1j8" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1976473816"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1976473816" style=""><p class="m-text-align-center text-align-center"><span style="display: unset;">&iquest;Qu&eacute; es DCFSA?</span><span style="display: initial;"><span class="ql-cursor">﻿</span></span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-layout-section="" data-auto="flex-section" id="1816219420" data-flex-id="00bd4d37"> <div class="flex-widgets-container" id="1583447951"></div> 
+ <section id="b80787c5" class="flex-element section" data-auto="flex-element-section"> <div id="b3aaa081" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="ad6a4e14" class="flex-element group" data-auto="flex-element-group"> <div id="26f75c0f" class="flex-element group" data-auto="flex-element-group"> <div id="widget_31m" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1164287307"> <div class="imageWidget align-center u_1164287307" data-element-type="image" data-widget-type="image" id="1164287307"> <a href="https://players.brightcove.net/64298592001/default_default/index.html?videoId=6338528458112" id="1619896175" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Screenshot_19-11-2024_14411_players.brightcove.net-1920w.jpeg" alt="" id="1162637009" class="" width="1680" height="941" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Screenshot_19-11-2024_14411_players.brightcove.net.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_bqa" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1543974588"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1543974588" style=""><p class="m-text-align-center text-align-center"><span style="display: unset;">MetLife Seguro para mascotas</span></p></div> 
+</div> 
+</div> 
+ <div id="3bef7c15" class="flex-element group" data-auto="flex-element-group"> <div id="widget_49f" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1307752773"> <div class="imageWidget align-center u_1307752773" data-element-type="image" data-widget-type="image" id="1307752773"> <a href="https://players.brightcove.net/64298592001/default_default/index.html?videoId=6271761569001" id="1718195893" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Screenshot_19-11-2024_133245_players.brightcove.net-1920w.jpeg" alt="" id="1707020659" class="" width="1301" height="749" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Screenshot_19-11-2024_133245_players.brightcove.net.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_nmv" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1909159324"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1909159324" style=""><p class="text-align-center m-text-align-center"><span class="" style="display: unset;"><span style="display: unset;">MetLife Seguro para mascotas -</span> 
+</span></p><p class="text-align-center m-text-align-center"><span style="display: unset;"><span class="ql-cursor">﻿</span>Ellos solo saben</span></p></div> 
+</div> 
+</div> 
+ <div id="2a9d0bd9" class="flex-element group" data-auto="flex-element-group"> <div id="widget_v9t" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1012972702"> <div class="imageWidget align-center u_1012972702" data-element-type="image" data-widget-type="image" id="1012972702"> <a href="https://players.brightcove.net/64298592001/default_default/index.html?videoId=6305154021001" id="1807834246" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Screenshot_19-11-2024_133630_players.brightcove.net-1920w.jpeg" alt="" id="1686273972" class="" width="1557" height="874" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Screenshot_19-11-2024_133630_players.brightcove.net.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_dnv" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1633721505"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1633721505" style=""><p class="m-text-align-center text-align-center"><span style="display: unset;">MetLife Seguro para mascotasV&iacute;deo de la aplicaci&oacute;n m&oacute;vil</span><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+ <div id="6c295da3" class="flex-element group" data-auto="flex-element-group"> <div id="widget_f0n" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1624703438"> <div class="imageWidget align-center u_1624703438" data-element-type="image" data-widget-type="image" id="1624703438"> <a href="https://players.brightcove.net/64298592001/default_default/index.html?videoId=6337438049112" id="1476344616" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Screenshot_19-11-2024_133724_players.brightcove.net-1920w.jpeg" alt="" id="1195718932" class="" width="1518" height="882" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Screenshot_19-11-2024_133724_players.brightcove.net.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_be1" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1036798002"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1036798002" style=""><p class="text-align-center"><span style="display: unset;">MetLife Seguro para mascotas V&iacute;deo posterior a la inscripci&oacute;n</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-layout-section="" data-auto="flex-section" id="1464381440" data-flex-id="d98b5691"> <div class="flex-widgets-container" id="1446736820"></div> 
+ <section id="dcec1826" class="flex-element section" data-auto="flex-element-section"> <div id="04bb8ff7" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="f3714787" class="flex-element group" data-auto="flex-element-group"> <div id="55826df7" class="flex-element group" data-auto="flex-element-group"> <div id="widget_s9l" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1922844097"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1922844097"><p class="m-text-align-center m-size-24 size-30 text-align-center"><span class="font-size-30 m-font-size-24" style="display: unset;">Informaci&oacute;n de Medicare</span></p></div> 
+</div> 
+ <div id="widget_mrh" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1282888999"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1282888999" style=""><p class="text-align-center"><span class="" style="display: initial;"><span style="display: initial;">Para los empleados que se acercan a la edad de elegibilidad para Medicare, hay muchas cosas en las que pensar. El siguiente enlace y videos se proporcionan para ayudar a entender Medicare.&nbsp;</span> 
+</span></p><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><a href="https://www.mybenefitadvisor.com/who-we-serve/individuals--families/medicare/" runtime_url="https://www.mybenefitadvisor.com/who-we-serve/individuals--families/medicare/" type="url" style="color: rgb(0, 0, 0); display: initial;">Podemos ayudarle a entender Medicare</a></p><p class="text-align-center m-text-align-center"><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-layout-section="" data-auto="flex-section" id="1377613970" data-flex-id="71d2c7f4"> <div class="flex-widgets-container" id="1986292221"></div> 
+ <section id="b9666c30" class="flex-element section" data-auto="flex-element-section"> <div id="61201935" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="babd068d" class="flex-element group" data-auto="flex-element-group"> <div id="a0c6f9d9" class="flex-element group" data-auto="flex-element-group"> <div id="widget_fop" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1879995450"> <div class="imageWidget align-center u_1879995450" data-element-type="image" data-widget-type="image" id="1879995450"> <a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=360c72212d20786a3a72106f3934273b6b787e06633b38352b317463126f2632216c267a6a4b&custom=medicare_101" id="1343584974" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Medicare+101+-+Parts+A-B-C-and+D-1920w.jpeg" alt="" id="1057499652" class="" width="1471" height="829" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Medicare+101+-+Parts+A-B-C-and+D.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_88f" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1142437716"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1142437716" style=""><p class="m-text-align-center text-align-center"><a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=360c72212d20786a3a72106f3934273b6b787e06633b38352b317463126f2632216c267a6a4b&custom=medicare_101" target="_blank" runtime_url="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=360c72212d20786a3a72106f3934273b6b787e06633b38352b317463126f2632216c267a6a4b&custom=medicare_101" type="url" style="text-decoration: none; color: rgb(0, 0, 0); display: unset;">Medicare 101 -</a></p><p class="m-text-align-center text-align-center"><a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=360c72212d20786a3a72106f3934273b6b787e06633b38352b317463126f2632216c267a6a4b&custom=medicare_101" target="_blank" runtime_url="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=360c72212d20786a3a72106f3934273b6b787e06633b38352b317463126f2632216c267a6a4b&custom=medicare_101" type="url" style="text-decoration: none; color: rgb(0, 0, 0); display: unset;">Partes A, B, C y D</a></p></div> 
+</div> 
+</div> 
+ <div id="81ce7359" class="flex-element group" data-auto="flex-element-group"> <div id="widget_k52" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1636176595"> <div class="imageWidget align-center u_1636176595" data-element-type="image" data-widget-type="image" id="1636176595"> <a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=251f61323e336b792963006268233933336871117c322f24273f757b053b25212d7e3b63701e76273c257e&custom=medicare_102" id="1106633994" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Medicare+102+-+Enrolling+in+Medicare-1920w.jpeg" alt="" id="1629016855" class="" width="1462" height="833" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Medicare+102+-+Enrolling+in+Medicare.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_r6t" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1858933602"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1858933602" style=""><p class="text-align-center m-text-align-center"><a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=251f61323e336b792963006268233933336871117c322f24273f757b053b25212d7e3b63701e76273c257e&custom=medicare_102" runtime_url="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=251f61323e336b792963006268233933336871117c322f24273f757b053b25212d7e3b63701e76273c257e&custom=medicare_102" type="url" style="display: unset; color: rgb(0, 0, 0); text-decoration: none;" target="_blank">Medicare 102 -</a> 
+</p><p class="text-align-center m-text-align-center"><a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=251f61323e336b792963006268233933336871117c322f24273f757b053b25212d7e3b63701e76273c257e&custom=medicare_102" runtime_url="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=251f61323e336b792963006268233933336871117c322f24273f757b053b25212d7e3b63701e76273c257e&custom=medicare_102" type="url" style="display: unset; color: rgb(0, 0, 0); text-decoration: none;" target="_blank">Inscripci&oacute;n en Medicare</a></p></div> 
+</div> 
+</div> 
+ <div id="c55105f8" class="flex-element group" data-auto="flex-element-group"> <div id="widget_qpc" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1832156200"> <div class="imageWidget align-center u_1832156200" data-element-type="image" data-widget-type="image" id="1832156200"> <a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=fbc1bfece0edb5a7f7bddebcb6fde7ededb6afcfa2ecf1faf9e1aba5dbe5fbfff3a0e5bdaec0a8f9e2fba0&custom=medicare_103" id="1825512713" class="" target="_blank" file="false"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Medicare+103+-+Selecting+a+Medicare+Plan-1920w.jpeg" alt="" id="1317376948" class="" width="1458" height="822" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Medicare+103+-+Selecting+a+Medicare+Plan.jpeg" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div id="widget_6l8" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1334737144"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1334737144" style=""><p class="m-text-align-center text-align-center"><a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=fbc1bfece0edb5a7f7bddebcb6fde7ededb6afcfa2ecf1faf9e1aba5dbe5fbfff3a0e5bdaec0a8f9e2fba0&custom=medicare_103" runtime_url="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=fbc1bfece0edb5a7f7bddebcb6fde7ededb6afcfa2ecf1faf9e1aba5dbe5fbfff3a0e5bdaec0a8f9e2fba0&custom=medicare_103" type="url" style="display: unset; color: rgb(0, 0, 0); text-decoration: none;" target="_blank">Medicare 103 - C&oacute;mo</a> 
+</p><p class="m-text-align-center text-align-center"><a href="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=fbc1bfece0edb5a7f7bddebcb6fde7ededb6afcfa2ecf1faf9e1aba5dbe5fbfff3a0e5bdaec0a8f9e2fba0&custom=medicare_103" runtime_url="https://www.brainshark.com/1/player/erc?dm=5&nrs=1&fb=0&r3f1=fbc1bfece0edb5a7f7bddebcb6fde7ededb6afcfa2ecf1faf9e1aba5dbe5fbfff3a0e5bdaec0a8f9e2fba0&custom=medicare_103" type="url" style="display: unset; color: rgb(0, 0, 0); text-decoration: none;" target="_blank">seleccionar un plan de Medicare</a></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="af8e88dd" data-auto="flex-section" id="1654328918" data-layout-section=""> <div class="flex-widgets-container" id="1015707572"></div> 
+ <section id="a8f7c774" class="flex-element section" data-auto="flex-element-section"> <div id="5fd291ba" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="3c903530" class="flex-element group" data-auto="flex-element-group"> <div id="ReferenceDocuments" class="flex-element group" data-auto="flex-element-group" data-anchor="Reference Documents"> <div id="widget_bn6" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1988814024"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1988814024" style=""><p class="m-text-align-center text-align-center m-size-26 size-32"> <span class="font-size-32 m-font-size-26" style="color:rgb(255, 255, 255);font-weight:bold;display:unset;font-family:Anybody, 'Anybody Fallback';">Documentos de referencia</span> 
+</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="9c25c0bc" data-auto="flex-section" id="1954791669" data-layout-section=""> <div class="flex-widgets-container" id="1266780700"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1168461482" style=""><p class="text-align-left m-text-align-center"><strong style="display: unset; font-weight: bold;">Beneficios<span class="ql-cursor">﻿</span></strong></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1808322010" style=""> <ul class="defaultList bullet"><li class="m-text-align-center text-align-left"><span style="display: unset;">Preguntas frecuentes</span></li></ul> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1705147595"><p class="text-align-left m-text-align-center"><strong style="display: unset; font-weight: bold;">Beneficios<span class="ql-cursor">﻿</span></strong></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1294468529"> <p class="text-align-left m-text-align-center" id="1055588688"> <span style="display: unset;" id="1723186677">This is paragraph text. Click it or hit the Manage Text button to change the font, color, size, format, and more. To set up site-wide paragraph and title styles, go to Site Theme.</span> 
+</p> 
+</div> 
+</div> 
+ <section id="698d33ba" class="flex-element section" data-auto="flex-element-section"> <div id="73988212" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="d9d0c0eb" class="flex-element group" data-auto="flex-element-group"> <div id="be4af2ce" class="flex-element group" data-auto="flex-element-group"> <div id="widget_thc" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1955331895"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1955331895" style=""><p class="m-text-align-center text-align-left m-size-16 size-18"><span style="font-weight:600;display:unset;font-family:Anybody, 'Anybody Fallback';" class="font-size-18 m-font-size-16">M&eacute;dico</span></p></div> 
+</div> 
+ <div id="widget_ma9" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1667695239"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1667695239" style=""> <ul class="defaultList bullet"><li class="text-align-left m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-16 m-font-size-13">Resumen del HDHP</span></li><li class="text-align-left m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-16 m-font-size-13">Resumen de PPO</span></li><li class="text-align-left m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/ubtu/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/ubtu/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo crear tu cuenta</a></li><li class="text-align-left m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/eylr/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/eylr/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo acceder a su tarjeta de identificaci&oacute;n</a></li><li class="text-align-left m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/inmh/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/inmh/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo encontrar en Network Doctor</a></li><li class="m-size-13 size-16 m-text-align-center"><a href="https://online.fliphtml5.com/sxzzv/mphe/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/mphe/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Lista de recetas RX</a></li></ul> 
+</div> 
+</div> 
+ <div id="97daa06b" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1529770966"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1529770966" style=""><p class="m-text-align-center text-align-left"> <span style="font-weight:600;display:initial;font-family:Anybody, 'Anybody Fallback';">Guardi&aacute;n del c&aacute;ncer - Vida gen&oacute;mica</span> 
+</p></div> 
+</div> 
+ <div id="a9d35a7d" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1615754129"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1615754129" style=""> <ul class="defaultList bullet"><li class="text-align-left m-text-align-center m-size-13 size-16" style="line-height: 1.5; color: rgb(0, 0, 0);"><a href="https://online.fliphtml5.com/sxzzv/aybg/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/aybg/" type="url" style="color:rgb(0, 0, 0);display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-16 m-font-size-13">Vida Gen&oacute;mica - Resumen de Opciones</a></li><li class="m-size-13 text-align-left m-text-align-center size-16" style="line-height: 1.5; color: rgb(0, 0, 0);"><a href="https://online.fliphtml5.com/sxzzv/wzxv/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/wzxv/" type="url" style="color:rgb(0, 0, 0);display:initial;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-13 font-size-16">Recurso para miembros de la videoteca</a></li></ul> 
+</div> 
+</div> 
+ <div id="widget_jt3" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1098834711"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1098834711" style=""><p class="text-align-left m-text-align-center"><span style="display: initial; font-weight: bold;">Dental</span></p></div> 
+</div> 
+ <div id="widget_d0o" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1245969602"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1245969602" style=""> <ul class="defaultList bullet"><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://www.ameritas.com/employee-benefits/faq-member/" target="_blank" runtime_url="https://www.ameritas.com/employee-benefits/faq-member/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">preguntas frecuentes</a></li><li class="m-size-13 m-text-align-center size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/eogi/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/eogi/" type="url" class="m-font-size-13 font-size-16" style="display: initial;">C&oacute;mo crear tu cuenta</a></li><li class="m-size-13 m-text-align-center size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/uloz/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/uloz/" type="url" class="m-font-size-13 font-size-16" style="display: initial;">C&oacute;mo encontrar en Network Doctor</a></li><li class="m-size-13 m-text-align-center size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/xatf/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/xatf/" type="url" class="m-font-size-13 font-size-16" style="display: initial;">C&oacute;mo obtener una tarjeta de identificaci&oacute;n en l&iacute;nea</a></li></ul> 
+</div> 
+</div> 
+ <div id="widget_8u1" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1847446368"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1847446368" style=""><p class="m-text-align-center text-align-left"><strong style="display: unset; font-weight: bold;">Visi&oacute;n</strong></p></div> 
+</div> 
+ <div id="widget_8qa" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1840071708"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1840071708" style=""> <ul class="defaultList bullet"><li class="m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://www.vsp.com/faqs" target="_blank" runtime_url="https://www.vsp.com/faqs" type="url" class="m-font-size-13 font-size-16" style="display: unset;">C&oacute;mo crear tu cuenta</a></li><li class="m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/wdim/" runtime_url="https://online.fliphtml5.com/sxzzv/wdim/" type="url" class="m-font-size-13 font-size-16" style="display: unset;">C&oacute;mo encontrar mi documento de identidad</a></li><li class="m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/drri/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/drri/" type="url" class="m-font-size-13 font-size-16" style="display: unset;">Preguntas frecuentes</a><span style="display: initial;"><br/></span></li></ul> 
+</div> 
+</div> 
+</div> 
+ <div id="group_bpb" class="flex-element group" data-auto="flex-element-group"> <div id="7ec3aa4d" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1386431936"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1386431936" style=""><p class="text-align-left m-text-align-center m-size-16 size-18"><span style="font-weight:600;display:unset;font-family:Anybody, 'Anybody Fallback';" class="font-size-18 m-font-size-16">Suplementario y voluntario</span></p></div> 
+</div> 
+ <div id="d3397fa1" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1744362764"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1744362764" style=""> <ul class="defaultList bullet"><li class="m-size-13 text-align-left m-text-align-center size-16" style="line-height: 1.5;"><span class="m-font-size-13 font-size-16" style="display:initial;font-family:Anybody, 'Anybody Fallback';"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-13 font-size-16">Seguro de vida/AD&amp;D&nbsp;</span> 
+</span></li><li class="m-size-13 text-align-left m-text-align-center size-16" style="line-height: 1.5;"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-13 font-size-16">Accidente</span></li><li class="m-size-13 text-align-left m-text-align-center size-16" style="line-height: 1.5;"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-13 font-size-16">Enfermedad cr&iacute;tica</span></li><li class="m-size-13 text-align-left m-text-align-center size-16" style="line-height: 1.5;"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-13 font-size-16">Indemnidad hospitalaria</span></li><li class="text-align-left m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><span style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="m-font-size-13 font-size-16">Seguro de vida entera</span></li></ul> 
+</div> 
+</div> 
+ <div id="widget_40v" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1469635006"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1469635006" style=""><p class="m-text-align-center text-align-left"><span style="font-weight: bold; display: unset;">Employer Paid</span></p></div> 
+</div> 
+ <div id="widget_tg8" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1471122078"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1471122078" style=""> <ul class="defaultList bullet"><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5;"><span class="font-size-16 m-font-size-13" style="display: initial;">Seguro de Vida/AD&amp;D</span></li><li class="m-size-13 m-text-align-center text-align-left size-16" style="line-height: 1.5;"><span class="m-font-size-13 font-size-16" style="display: initial;">Discapacidad a corto plazo</span></li><li class="m-size-13 m-text-align-center text-align-left size-16" style="line-height: 1.5;"><span class="m-font-size-13 font-size-16" style="display: initial;">Discapacidad a largo plazo</span></li><li class="m-size-13 m-text-align-center text-align-left size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/qete/" runtime_url="https://online.fliphtml5.com/sxzzv/qete/" type="url" class="m-font-size-13 font-size-16" style="display: initial;" target="_blank">Salir: crear una cuenta/enviar una reclamaci&oacute;n</a></li></ul> 
+</div> 
+</div> 
+ <div id="widget_3ai" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1299772578"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1299772578" style=""><p class="m-text-align-center text-align-left"><span style="display: unset; font-weight: 600;">HSA y FSA</span></p></div> 
+</div> 
+ <div id="widget_ggi" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1324844424"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1324844424" style=""> <ul class="defaultList bullet"><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/azxm/" runtime_url="https://online.fliphtml5.com/sxzzv/azxm/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo obtener una tarjeta HSA</a></li><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/usxd/" runtime_url="https://online.fliphtml5.com/sxzzv/usxd/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo usar su HSA</a></li><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/owfx/" runtime_url="https://online.fliphtml5.com/sxzzv/owfx/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo solicitar una nueva tarjeta</a></li><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/zsdw/" runtime_url="https://online.fliphtml5.com/sxzzv/zsdw/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Transferir o reinvertir fondos de HSA</a></li><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/zsxq/" runtime_url="https://online.fliphtml5.com/sxzzv/zsxq/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo cambiar las contribuciones a la HSA en Workday</a></li><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/czhb/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/czhb/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Folleto de la FSA para el cuidado de dependientes</a></li><li class="m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/lfyz/" runtime_url="https://online.fliphtml5.com/sxzzv/lfyz/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Ahorros fiscales con DCFSA</a></li><li class="text-align-left m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/nnbz/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/nnbz/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Calificaciones para el cuidado de ancianos con DCFSA</a></li><li class="text-align-left m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://app.teamwalnut.com/player/?demoId=c2a8c817-4f94-4543-91ad-b3f081270aab&screenId=4f9911e9-91d0-45ce-b29e-3aaddacadf85&showGuide=true&showGuidesToolbar=true&showHotspots=true&source=unknown" target="_blank" runtime_url="https://app.teamwalnut.com/player/?demoId=c2a8c817-4f94-4543-91ad-b3f081270aab&screenId=4f9911e9-91d0-45ce-b29e-3aaddacadf85&showGuide=true&showGuidesToolbar=true&showHotspots=true&source=unknown" type="url" class="font-size-16 m-font-size-13" style="display: initial;">&iquest;C&oacute;mo iniciar sesi&oacute;n en mi cuenta de DCFSA?</a></li><li class="m-size-13 text-align-left m-text-align-center size-16" style="line-height: 1.5;"><a href="https://www2.healthequity.com/learn/dependent-care-expenses" runtime_url="https://www2.healthequity.com/learn/dependent-care-expenses" type="url" class="m-font-size-13 font-size-16" style="display: initial;">Gastos de Cuidado Calificado para el Cuidado de Dependientes</a></li><li class="text-align-left m-text-align-center size-16 m-size-13" style="line-height: 1.5;"><a href="https://help.healthequity.com/en/articles/5056991-dcfsa-account-use-and-eligibility" runtime_url="https://help.healthequity.com/en/articles/5056991-dcfsa-account-use-and-eligibility" type="url" class="font-size-16 m-font-size-13" style="display: initial;" target="_blank">Preguntas frecuentes sobre el cuidado de dependientes</a></li></ul> 
+<p class="text-align-left m-text-align-center"><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+ <div id="group_te0" class="flex-element group" data-auto="flex-element-group"> <div id="93934ae7" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1870073747"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1870073747" style=""><p class="m-size-16 text-align-left m-text-align-center size-18"> <span class="m-font-size-16 font-size-18" style="font-weight:600;display:unset;font-family:Anybody, 'Anybody Fallback';">Programa de asistencia al empleado</span> 
+</p></div> 
+</div> 
+ <div id="48688fbc" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1661962244"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1661962244" style=""> <ul class="defaultList bullet"><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/qikt/" runtime_url="https://online.fliphtml5.com/sxzzv/qikt/" type="url" style="display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-16 m-font-size-13">Apoyo al matrimonio</a></li><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/dlif/" runtime_url="https://online.fliphtml5.com/sxzzv/dlif/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Criar a un ni&ntilde;o con necesidades especiales</a></li><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/tjal/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/tjal/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Separaci&oacute;n o divorcio</a></li><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/zhxt/" runtime_url="https://online.fliphtml5.com/sxzzv/zhxt/" type="url" class="font-size-16 m-font-size-13" style="display: initial;" target="_blank">Asistencia Legal</a></li></ul> 
+</div> 
+</div> 
+ <div id="widget_t62" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1233292325"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1233292325" style=""><p class="m-text-align-center text-align-left"><span style="font-weight:600;display:initial;font-family:Anybody, 'Anybody Fallback';">401(k)</span></p></div> 
+</div> 
+ <div id="widget_d2d" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1003720302"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1003720302" style=""> <ul class="defaultList bullet"><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5; color: rgb(0, 0, 0);"><a href="https://online.fliphtml5.com/sxzzv/onda/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/onda/" type="url" style="color:rgb(0, 0, 0);display:initial;font-family:Anybody, 'Anybody Fallback';" class="font-size-16 m-font-size-13">Fidelidad - Bienvenido a NetBenefits</a></li><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/megc/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/megc/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo crear tu cuenta de Fidelity</a></li><li class="m-size-13 m-text-align-center text-align-left size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/oyph/" runtime_url="https://online.fliphtml5.com/sxzzv/oyph/" type="url" class="m-font-size-13 font-size-16" style="display: initial;">C&oacute;mo cambiar mis contribuciones al plan 401(k)</a></li><li class="m-text-align-center text-align-left m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/hoqy/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/hoqy/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">transfiriendo fondos a su cuenta Kodiak 401(k)</a></li><li class="m-text-align-center text-align-left size-16 m-size-13" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/alas/" runtime_url="https://online.fliphtml5.com/sxzzv/alas/" type="url" class="font-size-16 m-font-size-13" style="display: initial;"><span class="ql-cursor">﻿</span>C&oacute;mo solicitar un pr&eacute;stamo o retiro</a></li></ul> 
+</div> 
+</div> 
+ <div id="widget_jjg" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1357104015"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1357104015" style=""><p class="m-text-align-center"><strong style="font-weight: bold; display: unset;">Seguro para mascotas</strong></p></div> 
+</div> 
+ <div id="widget_qv4" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1618702549"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1618702549" style=""> <ul class="defaultList bullet"><li class="m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/pujy/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/pujy/" type="url" class="m-font-size-13 font-size-16" style="display: initial;">C&oacute;mo funciona el seguro para mascotas</a></li><li class="m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/soko/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/soko/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">C&oacute;mo inscribirse en un seguro para mascotas</a></li><li class="m-size-13 size-16 m-text-align-center" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/ydls/" runtime_url="https://online.fliphtml5.com/sxzzv/ydls/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Seguro para mascotas: preguntas frecuentes</a><span style="display: initial;"><br/></span></li></ul> 
+</div> 
+</div> 
+ <div id="widget_4m0" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1787645904"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1787645904" style=""><p class="m-text-align-center text-align-left"><strong style="font-weight:600;display:unset;font-family:Anybody, 'Anybody Fallback';">Legal/IDShield</strong></p></div> 
+</div> 
+ <div id="widget_cdp" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1972063304"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1972063304" style=""> <ul class="defaultList bullet"><li class="m-size-13 text-align-left m-text-align-center size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/dktg/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/dktg/" type="url" class="m-font-size-13 font-size-16" style="display: initial;">Detalles de la cobertura</a></li><li class="text-align-left m-text-align-center m-size-13 size-16" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/ftoa/" target="_blank" runtime_url="https://online.fliphtml5.com/sxzzv/ftoa/" type="url" class="font-size-16 m-font-size-13" style="display: initial;">Aplicaci&oacute;n m&oacute;vil LegalShield</a></li><li class="text-align-left m-text-align-center size-16 m-size-13" style="line-height: 1.5;"><a href="https://online.fliphtml5.com/sxzzv/nbkd/" runtime_url="https://online.fliphtml5.com/sxzzv/nbkd/" type="url" class="font-size-16 m-font-size-13" style="display: initial;" target="_blank">Aplicaci&oacute;n m&oacute;vil IDShield</a></li></ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="27ee9c05" data-auto="flex-section" id="1370395938" data-layout-section=""> <div class="flex-widgets-container" id="1561361916"></div> 
+ <section id="c9c4ea15" class="flex-element section" data-auto="flex-element-section"> <div id="324822a4" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="5abe7e3c" class="flex-element group" data-auto="flex-element-group"> <div id="15bb949a" class="flex-element group" data-auto="flex-element-group"> <div id="e973d00b" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1297946199"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1297946199" style=""> <h2 class="text-align-center m-size-19 size-24"> <span class="font-size-24 m-font-size-19" style="color:rgb(255, 255, 255);font-weight:bold;display:unset;font-family:Anybody, 'Anybody Fallback';">&iquest;Tiene preguntas o necesita ayuda para inscribirse?</span> 
+</h2> 
+</div> 
+</div> 
+ <div id="51240f41" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1430972080"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient flexButton u_1430972080" file="false" href="enrollassist.html" data-element-type="dButtonLinkId" id="1430972080" link_type="popup" popup_target="es-mx/enrollassist"> <span class="iconBg" aria-hidden="true" id="1963090535"> <span class="icon hasFontIcon icon-star" id="1373972465"></span> 
+</span> 
+ <span class="text" id="1408030490">&iexcl;Env&iacute;anos un correo electr&oacute;nico!</span> 
+</a> 
+</div> 
+</div> 
+ <div id="group_00a" class="flex-element group" data-auto="flex-element-group"> <div id="widget_sci" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1414446585"> <div class="imageWidget align-center u_1414446585" data-element-type="image" data-widget-type="image" id="1414446585"><img src="https://lirp.cdn-website.com/f138101c/dms3rep/multi/opt/Kodiak+Bear+-+White-1920w.png" alt="" id="1914891635" class="" data-dm-image-path="https://irp.cdn-website.com/f138101c/dms3rep/multi/Kodiak+Bear+-+White.png" width="1250" height="1063" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div data-flex-id="62a63883fdd2b461c331afd8" data-auto="flex-section" id="1442172201" data-layout-section=""> <div class="flex-widgets-container" id="1326753413"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1117536195" style=""> <h1 class="m-size-35 text-align-center size-50"> <span class="m-font-size-35 font-size-50" style="color:rgb(26, 27, 31);font-weight:normal;display:unset;">A&ntilde;ade tu t&iacute;tulo aqu&iacute;</span> 
+</h1> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1730177244" style=""><p class="text-align-center size-18 m-size-16" style="line-height: 1.5;"> <span class="font-size-18 m-font-size-16" style="color:rgb(26, 27, 31);display:initial;">Esta es el &aacute;rea de texto de este p&aacute;rrafo. Para cambiarla, simplemente haz clic y comienza a escribir. Una vez que hayas agregado tu contenido, puedes personalizar su dise&ntilde;o usando diferentes colores, fuentes, tama&ntilde;os de fuente y vi&ntilde;etas. Solo resalta las palabras que deseas dise&ntilde;ar y elige entre las distintas opciones en la barra de edici&oacute;n de texto. Esta es el &aacute;rea de texto de este p&aacute;rrafo. Para cambiarla, simplemente haz clic y comienza a escribir. Despu&eacute;s de agregar tu contenido, puedes personalizarlo.</span> 
+</p></div> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="../es-mx.html" data-element-type="dButtonLinkId" id="1542726725"> <span class="iconBg" id="1804448980"> <span class="icon hasFontIcon icon-star" id="1515672604"></span> 
+</span> 
+ <span class="text" id="1439297474">M&aacute;s informaci&oacute;n</span> 
+</a> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1093522200" style=""><p class="text-align-left size-18 m-size-16 m-text-align-left" style="line-height: 1.5;"> <span class="font-size-18 m-font-size-16" style="color:rgb(26, 27, 31);display:initial;">Esta es el &aacute;rea de texto de este p&aacute;rrafo. Para cambiarla, simplemente haz clic y comienza a escribir. Una vez que hayas agregado tu contenido, puedes personalizar su dise&ntilde;o usando diferentes colores, fuentes, tama&ntilde;os de fuente y vi&ntilde;etas. Simplemente resalta las palabras que deseas dise&ntilde;ar y elige entre las distintas opciones en la barra de edici&oacute;n de texto.</span> 
+</p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1848128005" style=""> <h3 class="size-32 m-size-26"> <span class="font-size-32 m-font-size-26" style="color:rgb(26, 27, 31);display:unset;">T&iacute;tulo corto</span> 
+</h3> 
+</div> 
+</div> 
+ <section id="62a63883fdd2b461c331afd9" class="flex-element section" data-auto="flex-element-section"> <div id="62a63883fdd2b461c331afdd" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62a63883fdd2b461c331afda" class="flex-element group" data-auto="flex-element-group"> <div id="62a63891fdd2b461c331b27a" class="flex-element group" data-auto="flex-element-group"> <div id="62a638b8fdd2b461c331b963" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1870543438"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="https://kodiak-gas-services.benefitsinfo.com/Portfolio" data-element-type="dButtonLinkId" id="1870543438"> <span class="iconBg" id="1830643420"> <span class="icon hasFontIcon icon-star" id="1365747978"></span> 
+</span> 
+ <span class="text" id="1556648095">Cartera</span> 
+</a> 
+</div> 
+</div> 
+ <div id="62a63893fdd2b461c331b3a4" class="flex-element group" data-auto="flex-element-group"> <div id="62a638c0fdd2b461c331ba64" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1394321023"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="enrollassist-contact-form.html" data-element-type="dButtonLinkId" id="1394321023"> <span class="iconBg" id="1542843608"> <span class="icon hasFontIcon icon-star" id="1869642430"></span> 
+</span> 
+ <span class="text" id="1055731404">Ponte en contacto con nosotros</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "SPANISH_MEXICO"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_5547";
+    var build = "2025-06-16T12_53_29";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2025-06-16T12_53_29";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script type="text/javascript">
+    window.popups =
+    [{"title":"InscripciónAsistente","url":"/es-mx/enrollassist","options":{"backgroundColor":"#FFFFFF","borderRadius":"5","width":"764","overlayColor":"rgba(0, 0, 0, 0.5)","height":"420","animation":"fadeIn"},"name":"es-mx/enrollassist"}]</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/5547';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/5547';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+    rtCommonProps["streamline.monolith.personalization.skipRuleConditionsForPreview.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["runtime.cwv.report.cls.enabled"] =true;
+    rtFlags["editor.link.on.container"] =true;
+    rtFlags["flex.runtime.popup.with.show"] =true;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["flex.megaMenu.a11y"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/5547/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/5547/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+    if (!window.location.search) {
+        return;
+    }
+	const cleanParams = window.location.search.substring(1); // Strip ?
+	const queryParams = cleanParams.split('&');
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((param) => {
+		const [key, value = ''] = param.split('=');
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: 'f138101c'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Cerrar (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Compartir"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Alternar pantalla completa"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Ampliar/reducir"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Anterior (flecha hacia la izquierda)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Siguiente (flecha hacia la derecha)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="es_LA"></div>
+<!-- Alias: f138101c -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

@@ -1,0 +1,9 @@
+https://app.teamwalnut.com/player/?demoId=c2a8c817-4f94-4543-91ad-b3f081270aab&screenId=4f9911e9-91d0-45ce-b29e-3aaddacadf85&showGuide=true&showGuidesToolbar=true&showHotspots=true&source=unknown -> ENOENT: no such file or directory, open 'downloaded_resources/app.teamwalnut.com/player/'
+https://facebook.com/ -> Request failed with status code 400
+https://help.healthequity.com/en/articles/5056991-dcfsa-account-use-and-eligibility -> Request failed with status code 403
+https://info.healthequity.com/Member/DCFSA -> Request failed with status code 403
+https://lirp.cdn-website.com/ -> Request failed with status code 404
+https://player.vimeo.com/video/985208864 -> Request failed with status code 401
+https://www.ameritas.com/employee-benefits/faq-member-account/ -> ENOENT: no such file or directory, open 'downloaded_resources/www.ameritas.com/employee-benefits/faq-member-account/'
+https://www.ameritas.com/employee-benefits/faq-member/ -> ENOENT: no such file or directory, open 'downloaded_resources/www.ameritas.com/employee-benefits/faq-member/'
+https://www2.healthequity.com/learn/dependent-care-expenses -> Request failed with status code 403
